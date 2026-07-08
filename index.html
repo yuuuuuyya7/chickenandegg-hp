@@ -3,708 +3,226 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>株式会社チキンアンドエッグ | 中小企業向け人材採用支援・採用DX【静岡・愛知】</title>
-<meta name="description" content="静岡・愛知の中小企業に「人が集まる仕組み」と「人が辞めない組織」を。採用HP制作・LINE採用システム・採用コンサルティングなら株式会社チキンアンドエッグ。">
+<title>株式会社チキンアンドエッグ｜採用を、循環させる。中小企業向け採用支援・採用DX【静岡・愛知】</title>
+<meta name="description" content="静岡・愛知の中小企業に「人が集まる仕組み」と「人が辞めない組織」を。採用ブランディングHP制作・LINE採用システム・定着支援まで、採用を循環として設計する株式会社チキンアンドエッグ。">
 <meta name="keywords" content="採用支援,採用DX,中小企業,静岡,愛知,HP制作,LINE採用,採用コンサルティング,人材定着">
-<meta property="og:title" content="株式会社チキンアンドエッグ | 中小企業向け人材採用支援・採用DX">
+<meta property="og:title" content="株式会社チキンアンドエッグ｜採用を、循環させる。">
 <meta property="og:description" content="静岡・愛知の中小企業に「人が集まる仕組み」と「人が辞めない組織」を提供します。">
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://chickenandegg.co.jp/">
 <link rel="canonical" href="https://chickenandegg.co.jp/">
+<link rel="icon" type="image/png" href="assets/logo-mark.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500;600;700;900&family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Noto+Sans+JP:wght@400;500;700;900&family=Shippori+Mincho:wght@500;600;700;800&family=Zen+Kaku+Gothic+New:wght@400;500;700;900&display=swap" rel="stylesheet">
 <style>
-/* ========== RESET & BASE ========== */
-*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
-html{scroll-behavior:smooth;font-size:16px;-webkit-text-size-adjust:100%}
-body{font-family:'Noto Sans JP','Inter',sans-serif;color:#1a1a2e;background:#fff;line-height:1.8;overflow-x:hidden;-webkit-font-smoothing:antialiased}
-img{max-width:100%;height:auto;display:block}
-a{text-decoration:none;color:inherit;transition:all .3s ease}
-ul,ol{list-style:none}
 
-/* ========== CSS VARIABLES ========== */
-:root{
-  --primary:#e8960c;
-  --primary-dark:#c77d0a;
-  --primary-light:#fef3e0;
-  --accent:#1a3a5c;
-  --accent-light:#2d5a8e;
-  --dark:#0f1923;
-  --text:#2c3e50;
-  --text-light:#5a6a7a;
-  --bg-warm:#faf8f5;
-  --bg-section:#f5f2ed;
-  --white:#ffffff;
-  --shadow-sm:0 2px 8px rgba(0,0,0,.06);
-  --shadow-md:0 8px 30px rgba(0,0,0,.08);
-  --shadow-lg:0 20px 60px rgba(0,0,0,.1);
-  --radius:12px;
-  --radius-lg:20px;
-  --transition:all .4s cubic-bezier(.25,.46,.45,.94);
-  --max-width:1200px;
-}
+  :root {
+    --bg: #F6F1E8;
+    --bg-2: #EFE7D6;
+    --paper: #FBF8F1;
+    --ink: #1B2238;
+    --ink-2: #2E3550;
+    --muted: #6B6657;
+    --line: rgba(27,34,56,.10);
+    --line-2: rgba(27,34,56,.18);
+    --accent: #E2592A;
+    --accent-soft: #F2C24A;
+    --shell: #FAF7F0;
 
-/* ========== UTILITY ========== */
-.container{max-width:var(--max-width);margin:0 auto;padding:0 24px}
-.section{padding:100px 0}
-.section-label{display:inline-flex;align-items:center;gap:8px;font-size:.75rem;font-weight:600;letter-spacing:.15em;text-transform:uppercase;color:var(--primary-dark);margin-bottom:16px}
-.section-label::before{content:'';width:24px;height:2px;background:var(--primary)}
-.section-title{font-size:clamp(1.75rem,4vw,2.5rem);font-weight:700;line-height:1.4;color:var(--dark);margin-bottom:20px}
-.section-desc{font-size:1rem;color:var(--text-light);max-width:640px;line-height:1.9}
-.text-center{text-align:center}
-.mx-auto{margin-left:auto;margin-right:auto}
+    --serif: "Shippori Mincho", "游明朝", "Yu Mincho", serif;
+    --display: "Zen Kaku Gothic New", "游ゴシック", "Yu Gothic", sans-serif;
+    --body: "Noto Sans JP", "Hiragino Kaku Gothic ProN", sans-serif;
+    --mono: "Inter", ui-sans-serif, system-ui;
 
-/* ========== ANIMATIONS ========== */
-.fade-up{opacity:0;transform:translateY(40px);transition:opacity .8s ease,transform .8s ease}
-.fade-up.visible{opacity:1;transform:translateY(0)}
-.fade-up-delay{transition-delay:.2s}
-.fade-up-delay-2{transition-delay:.4s}
-.stagger>*{opacity:0;transform:translateY(30px);transition:opacity .6s ease,transform .6s ease}
-.stagger.visible>*:nth-child(1){transition-delay:.1s;opacity:1;transform:translateY(0)}
-.stagger.visible>*:nth-child(2){transition-delay:.2s;opacity:1;transform:translateY(0)}
-.stagger.visible>*:nth-child(3){transition-delay:.3s;opacity:1;transform:translateY(0)}
-.stagger.visible>*:nth-child(4){transition-delay:.4s;opacity:1;transform:translateY(0)}
+    --r: 6px;
+    --maxw: 1240px;
+    --pad: clamp(20px, 4vw, 56px);
+  }
 
-/* ========== HEADER ========== */
-.header{position:fixed;top:0;left:0;right:0;z-index:1000;padding:16px 0;transition:var(--transition)}
-.header.scrolled{background:rgba(255,255,255,.95);backdrop-filter:blur(20px);box-shadow:var(--shadow-sm);padding:10px 0}
-.header-inner{display:flex;align-items:center;justify-content:space-between}
-.logo{display:flex;align-items:center;gap:10px;font-weight:700;font-size:1.1rem;color:var(--white);transition:var(--transition)}
-.header.scrolled .logo{color:var(--dark)}
-.logo-icon{width:40px;height:40px;background:var(--primary);border-radius:10px;display:flex;align-items:center;justify-content:center;font-size:1.2rem;color:var(--white);font-weight:800}
-.nav{display:flex;align-items:center;gap:32px}
-.nav a{font-size:.875rem;font-weight:500;color:rgba(255,255,255,.85);transition:var(--transition);position:relative}
-.header.scrolled .nav a{color:var(--text)}
-.nav a:hover{color:var(--primary)}
-.nav a::after{content:'';position:absolute;bottom:-4px;left:0;width:0;height:2px;background:var(--primary);transition:width .3s ease}
-.nav a:hover::after{width:100%}
-.nav-cta{display:inline-flex;align-items:center;gap:8px;padding:10px 24px;background:var(--primary);color:var(--white)!important;border-radius:50px;font-weight:600;font-size:.875rem;transition:var(--transition);box-shadow:0 4px 15px rgba(232,150,12,.3)}
-.nav-cta:hover{background:var(--primary-dark);transform:translateY(-2px);box-shadow:0 6px 20px rgba(232,150,12,.4)}
-.nav-cta::after{display:none!important}
-.hamburger{display:none;flex-direction:column;gap:5px;cursor:pointer;z-index:1001;padding:4px}
-.hamburger span{width:24px;height:2px;background:var(--white);transition:var(--transition)}
-.header.scrolled .hamburger span{background:var(--dark)}
-.hamburger.active span:nth-child(1){transform:rotate(45deg) translate(5px,5px)}
-.hamburger.active span:nth-child(2){opacity:0}
-.hamburger.active span:nth-child(3){transform:rotate(-45deg) translate(5px,-5px)}
+  /* dark/navy palette toggle */
+  body[data-mode="cool"] {
+    --bg: #EDE7DA;
+    --accent: #D85428;
+  }
+  body[data-mode="mono"] {
+    --bg: #F4F1EB;
+    --accent: #1B2238;
+    --accent-soft: #C9C2B0;
+  }
 
-/* ========== HERO ========== */
-.hero{position:relative;min-height:100vh;display:flex;align-items:center;background:linear-gradient(135deg,var(--dark) 0%,#1a3a5c 50%,#2d5a8e 100%);overflow:hidden}
-.hero::before{content:'';position:absolute;top:-50%;right:-20%;width:80%;height:200%;background:radial-gradient(circle,rgba(232,150,12,.15) 0%,transparent 60%);pointer-events:none}
-.hero::after{content:'';position:absolute;bottom:0;left:0;right:0;height:120px;background:linear-gradient(to top,var(--white),transparent);pointer-events:none}
-.hero-grid{display:grid;grid-template-columns:1fr 1fr;gap:60px;align-items:center;min-height:100vh;padding:120px 0 80px}
-.hero-content{position:relative;z-index:2}
-.hero-badge{display:inline-flex;align-items:center;gap:8px;padding:8px 20px;background:rgba(232,150,12,.15);border:1px solid rgba(232,150,12,.3);border-radius:50px;color:var(--primary);font-size:.8rem;font-weight:600;margin-bottom:28px;backdrop-filter:blur(10px)}
-.hero-badge::before{content:'';width:8px;height:8px;background:var(--primary);border-radius:50%;animation:pulse 2s infinite}
-@keyframes pulse{0%,100%{opacity:1}50%{opacity:.4}}
-.hero h1{font-size:clamp(2rem,4.5vw,3.2rem);font-weight:900;color:var(--white);line-height:1.35;margin-bottom:24px;letter-spacing:-.02em}
-.hero h1 em{font-style:normal;color:var(--primary);position:relative}
-.hero-sub{font-size:1.1rem;color:rgba(255,255,255,.7);line-height:1.9;margin-bottom:40px;max-width:520px}
-.hero-actions{display:flex;gap:16px;flex-wrap:wrap}
-.btn-primary{display:inline-flex;align-items:center;gap:10px;padding:16px 36px;background:var(--primary);color:var(--white);border-radius:50px;font-weight:700;font-size:1rem;transition:var(--transition);box-shadow:0 8px 25px rgba(232,150,12,.35);border:none;cursor:pointer}
-.btn-primary:hover{background:var(--primary-dark);transform:translateY(-3px);box-shadow:0 12px 35px rgba(232,150,12,.45)}
-.btn-secondary{display:inline-flex;align-items:center;gap:10px;padding:16px 36px;background:transparent;color:var(--white);border-radius:50px;font-weight:600;font-size:1rem;transition:var(--transition);border:1.5px solid rgba(255,255,255,.3);cursor:pointer}
-.btn-secondary:hover{border-color:var(--primary);color:var(--primary);background:rgba(232,150,12,.1)}
-.hero-visual{position:relative;display:flex;justify-content:center;align-items:center}
-.hero-visual-inner{position:relative;width:100%;max-width:480px;aspect-ratio:1;display:flex;align-items:center;justify-content:center}
-.hero-circle{position:absolute;border-radius:50%;border:1.5px solid rgba(232,150,12,.2);animation:spin 30s linear infinite}
-.hero-circle:nth-child(1){width:100%;height:100%}
-.hero-circle:nth-child(2){width:75%;height:75%;animation-direction:reverse;animation-duration:25s;border-color:rgba(255,255,255,.08)}
-.hero-circle:nth-child(3){width:50%;height:50%;animation-duration:20s;border-color:rgba(232,150,12,.15)}
-@keyframes spin{to{transform:rotate(360deg)}}
-.hero-center-card{position:relative;z-index:2;background:rgba(255,255,255,.08);backdrop-filter:blur(20px);border:1px solid rgba(255,255,255,.12);border-radius:var(--radius-lg);padding:40px;text-align:center;max-width:280px}
-.hero-center-icon{font-size:3rem;margin-bottom:16px}
-.hero-center-card h3{color:var(--white);font-size:1.1rem;font-weight:700;margin-bottom:8px}
-.hero-center-card p{color:rgba(255,255,255,.6);font-size:.85rem;line-height:1.6}
-.float-card{position:absolute;z-index:3;background:rgba(255,255,255,.95);backdrop-filter:blur(10px);border-radius:var(--radius);padding:16px 20px;box-shadow:var(--shadow-lg);display:flex;align-items:center;gap:12px;animation:float 6s ease-in-out infinite}
-.float-card:nth-child(5){top:10%;right:0;animation-delay:0s}
-.float-card:nth-child(6){bottom:15%;left:-20px;animation-delay:2s}
-.float-card:nth-child(7){top:50%;right:-10px;animation-delay:4s}
-@keyframes float{0%,100%{transform:translateY(0)}50%{transform:translateY(-12px)}}
-.float-icon{width:40px;height:40px;border-radius:10px;display:flex;align-items:center;justify-content:center;font-size:1.2rem;flex-shrink:0}
-.float-icon.blue{background:rgba(26,58,92,.1);color:var(--accent)}
-.float-icon.orange{background:rgba(232,150,12,.1);color:var(--primary)}
-.float-icon.green{background:rgba(16,185,129,.1);color:#10b981}
-.float-card-text{font-size:.8rem}
-.float-card-text strong{display:block;font-size:.9rem;color:var(--dark)}
+  * { box-sizing: border-box; }
+  html, body { margin: 0; padding: 0; }
+  body {
+    background: var(--bg);
+    color: var(--ink);
+    font-family: var(--body);
+    font-weight: 400;
+    line-height: 1.7;
+    font-feature-settings: "palt";
+    -webkit-font-smoothing: antialiased;
+    overflow-x: hidden;
+  }
 
-/* ========== PROBLEM ========== */
-.problem{background:var(--bg-warm)}
-.problem-grid{display:grid;grid-template-columns:1fr 1fr;gap:60px;align-items:center}
-.problem-visual{position:relative;display:flex;justify-content:center}
-.bucket-animation{display:flex;flex-direction:column;align-items:center;gap:30px}
-.bucket-item{display:flex;flex-direction:column;align-items:center;gap:12px;padding:30px 40px;border-radius:var(--radius-lg);text-align:center;transition:var(--transition)}
-.bucket-item.before{background:rgba(239,68,68,.06);border:1.5px solid rgba(239,68,68,.15)}
-.bucket-item.after{background:rgba(16,185,129,.06);border:1.5px solid rgba(16,185,129,.15)}
-.bucket-icon{font-size:3rem}
-.bucket-label{font-size:.9rem;font-weight:600;color:var(--text)}
-.bucket-arrow{font-size:1.5rem;color:var(--primary);font-weight:700}
-.problem-content h2{font-size:clamp(1.5rem,3.5vw,2.2rem);font-weight:700;line-height:1.4;color:var(--dark);margin-bottom:20px}
-.problem-content h2 em{font-style:normal;color:#ef4444}
-.problem-content h2 strong{color:var(--primary)}
-.highlight-box{background:var(--white);border-left:4px solid var(--primary);padding:24px 28px;border-radius:0 var(--radius) var(--radius) 0;margin:28px 0;box-shadow:var(--shadow-sm)}
-.highlight-box p{font-size:.95rem;color:var(--text);line-height:1.9}
-.approach-pills{display:flex;gap:12px;flex-wrap:wrap;margin-top:28px}
-.approach-pill{display:inline-flex;align-items:center;gap:8px;padding:12px 20px;border-radius:50px;font-size:.85rem;font-weight:600}
-.approach-pill.blue{background:rgba(26,58,92,.08);color:var(--accent)}
-.approach-pill.orange{background:rgba(232,150,12,.1);color:var(--primary-dark)}
+  ::selection { background: var(--accent); color: #fff; }
 
-/* ========== SERVICES ========== */
-.services{background:var(--white)}
-.services-header{text-align:center;margin-bottom:60px}
-.service-group{margin-bottom:80px}
-.service-group:last-child{margin-bottom:0}
-.service-group-header{display:flex;align-items:center;gap:20px;margin-bottom:40px;padding-bottom:20px;border-bottom:1.5px solid rgba(0,0,0,.06)}
-.service-group-icon{width:56px;height:56px;border-radius:14px;display:flex;align-items:center;justify-content:center;font-size:1.6rem;flex-shrink:0}
-.service-group-icon.tamago{background:linear-gradient(135deg,var(--accent),var(--accent-light));color:var(--white)}
-.service-group-icon.niwatori{background:linear-gradient(135deg,var(--primary),#f0a830);color:var(--white)}
-.service-group-title{font-size:1.4rem;font-weight:700;color:var(--dark)}
-.service-group-title span{display:block;font-size:.8rem;font-weight:500;color:var(--text-light);margin-top:2px}
-.service-cards{display:grid;grid-template-columns:repeat(3,1fr);gap:24px}
-.service-card{background:var(--white);border:1.5px solid rgba(0,0,0,.06);border-radius:var(--radius-lg);padding:36px 28px;transition:var(--transition);position:relative;overflow:hidden}
-.service-card::before{content:'';position:absolute;top:0;left:0;right:0;height:3px;background:linear-gradient(90deg,var(--primary),var(--accent-light));opacity:0;transition:var(--transition)}
-.service-card:hover{transform:translateY(-6px);box-shadow:var(--shadow-lg);border-color:transparent}
-.service-card:hover::before{opacity:1}
-.service-card-icon{width:48px;height:48px;border-radius:12px;display:flex;align-items:center;justify-content:center;font-size:1.4rem;margin-bottom:20px}
-.service-card-icon.blue{background:rgba(26,58,92,.08)}
-.service-card-icon.orange{background:rgba(232,150,12,.08)}
-.service-card h4{font-size:1.05rem;font-weight:700;color:var(--dark);margin-bottom:12px}
-.service-card p{font-size:.88rem;color:var(--text-light);line-height:1.8}
+  /* canonical typography */
+  .display {
+    font-family: var(--display);
+    font-weight: 900;
+    letter-spacing: -0.01em;
+    line-height: 1.05;
+  }
+  .eyebrow {
+    font-family: var(--mono);
+    font-size: 11px;
+    letter-spacing: 0.22em;
+    text-transform: uppercase;
+    color: var(--muted);
+    font-weight: 500;
+  }
+  .label-jp {
+    font-family: var(--display);
+    font-weight: 500;
+    font-size: 12px;
+    letter-spacing: 0.18em;
+    color: var(--muted);
+  }
+  .num {
+    font-family: var(--mono);
+    font-feature-settings: "tnum", "lnum";
+    font-weight: 500;
+  }
+  .serif {
+    font-family: var(--serif);
+  }
 
-/* ========== STRENGTHS ========== */
-.strengths{background:linear-gradient(135deg,var(--dark) 0%,#1a3a5c 100%);color:var(--white)}
-.strengths .section-label{color:var(--primary)}
-.strengths .section-title{color:var(--white)}
-.strengths .section-desc{color:rgba(255,255,255,.6)}
-.strength-cards{display:grid;grid-template-columns:repeat(3,1fr);gap:28px;margin-top:50px}
-.strength-card{background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.08);border-radius:var(--radius-lg);padding:40px 32px;transition:var(--transition);position:relative}
-.strength-card:hover{background:rgba(255,255,255,.08);transform:translateY(-4px);box-shadow:0 20px 40px rgba(0,0,0,.3)}
-.strength-num{font-size:3.5rem;font-weight:800;color:rgba(232,150,12,.3);font-family:'Inter',sans-serif;line-height:1;margin-bottom:16px}
-.strength-card h4{font-size:1.15rem;font-weight:700;color:var(--white);margin-bottom:14px}
-.strength-card p{font-size:.88rem;color:rgba(255,255,255,.55);line-height:1.8}
+  /* container */
+  .wrap { max-width: var(--maxw); margin: 0 auto; padding: 0 var(--pad); }
+  .wrap-narrow { max-width: 980px; margin: 0 auto; padding: 0 var(--pad); }
 
-/* ========== FLOW ========== */
-.flow{background:var(--bg-warm)}
-.flow-steps{display:grid;grid-template-columns:repeat(4,1fr);gap:20px;margin-top:50px;position:relative}
-.flow-steps::before{content:'';position:absolute;top:60px;left:10%;right:10%;height:2px;background:linear-gradient(90deg,var(--primary),var(--accent-light));opacity:.2}
-.flow-step{text-align:center;position:relative;z-index:1}
-.flow-step-num{width:56px;height:56px;border-radius:50%;background:var(--white);border:2px solid var(--primary);display:flex;align-items:center;justify-content:center;font-size:1.1rem;font-weight:800;color:var(--primary);margin:0 auto 20px;font-family:'Inter',sans-serif;box-shadow:var(--shadow-md);transition:var(--transition)}
-.flow-step:hover .flow-step-num{background:var(--primary);color:var(--white);transform:scale(1.1)}
-.flow-step h4{font-size:1rem;font-weight:700;color:var(--dark);margin-bottom:10px}
-.flow-step p{font-size:.83rem;color:var(--text-light);line-height:1.7;padding:0 8px}
-.flow-note{text-align:center;margin-top:40px;padding:20px;background:var(--white);border-radius:var(--radius);box-shadow:var(--shadow-sm);font-size:.9rem;color:var(--text)}
-.flow-note strong{color:var(--primary)}
+  /* divider rule */
+  .rule { height: 1px; background: var(--line); border: 0; margin: 0; }
 
-/* ========== DIGITAL GRID ========== */
-.digital-grid{background:var(--white);border-top:1px solid rgba(0,0,0,.04)}
-.dg-card{background:linear-gradient(135deg,#f0fdf4 0%,#ecfdf5 100%);border:1.5px solid rgba(16,185,129,.15);border-radius:var(--radius-lg);padding:60px;display:grid;grid-template-columns:1fr 1fr;gap:50px;align-items:center}
-.dg-content .section-label{color:#059669}
-.dg-content .section-label::before{background:#059669}
-.dg-content h3{font-size:1.6rem;font-weight:700;color:var(--dark);margin-bottom:16px}
-.dg-content>p{font-size:.95rem;color:var(--text-light);line-height:1.8;margin-bottom:28px}
-.dg-features{display:grid;grid-template-columns:1fr;gap:16px}
-.dg-feature{display:flex;align-items:flex-start;gap:14px;padding:16px;background:var(--white);border-radius:var(--radius);box-shadow:var(--shadow-sm)}
-.dg-feature-icon{width:36px;height:36px;border-radius:9px;background:rgba(16,185,129,.1);display:flex;align-items:center;justify-content:center;font-size:1rem;flex-shrink:0;color:#059669}
-.dg-feature h5{font-size:.9rem;font-weight:700;color:var(--dark);margin-bottom:2px}
-.dg-feature p{font-size:.8rem;color:var(--text-light)}
-.dg-visual{display:flex;flex-direction:column;align-items:center;gap:20px}
-.dg-partner-badge{display:inline-flex;align-items:center;gap:8px;padding:8px 16px;background:var(--white);border-radius:50px;font-size:.75rem;font-weight:600;color:#059669;box-shadow:var(--shadow-sm)}
-.dg-chart{width:100%;max-width:340px;aspect-ratio:1;position:relative;display:flex;align-items:center;justify-content:center}
-.dg-chart-ring{position:absolute;width:100%;height:100%;border-radius:50%;border:20px solid rgba(16,185,129,.1)}
-.dg-chart-ring-fill{position:absolute;width:100%;height:100%;border-radius:50%;border:20px solid transparent;border-top-color:#10b981;border-right-color:#10b981;transform:rotate(-45deg)}
-.dg-chart-center{text-align:center;z-index:1}
-.dg-chart-center .big{font-size:2.5rem;font-weight:800;color:#059669;display:block;line-height:1}
-.dg-chart-center .label{font-size:.85rem;color:var(--text-light);margin-top:4px}
+  /* utility */
+  a { color: inherit; text-decoration: none; }
+  button { font-family: inherit; cursor: pointer; }
 
-/* ========== CTA ========== */
-.cta{background:linear-gradient(135deg,var(--primary) 0%,#d4870a 100%);padding:80px 0;position:relative;overflow:hidden}
-.cta::before{content:'';position:absolute;top:-50%;right:-10%;width:60%;height:200%;background:radial-gradient(circle,rgba(255,255,255,.1) 0%,transparent 60%);pointer-events:none}
-.cta-inner{text-align:center;position:relative;z-index:1}
-.cta h2{font-size:clamp(1.5rem,3.5vw,2.2rem);font-weight:700;color:var(--white);margin-bottom:16px}
-.cta p{font-size:1rem;color:rgba(255,255,255,.85);margin-bottom:36px;max-width:540px;margin-left:auto;margin-right:auto}
-.cta-buttons{display:flex;gap:16px;justify-content:center;flex-wrap:wrap}
-.btn-white{display:inline-flex;align-items:center;gap:10px;padding:16px 36px;background:var(--white);color:var(--primary-dark);border-radius:50px;font-weight:700;font-size:1rem;transition:var(--transition);box-shadow:var(--shadow-md);border:none;cursor:pointer}
-.btn-white:hover{transform:translateY(-3px);box-shadow:var(--shadow-lg)}
-.btn-outline-white{display:inline-flex;align-items:center;gap:10px;padding:16px 36px;background:transparent;color:var(--white);border-radius:50px;font-weight:600;font-size:1rem;transition:var(--transition);border:1.5px solid rgba(255,255,255,.4);cursor:pointer}
-.btn-outline-white:hover{background:rgba(255,255,255,.15);border-color:var(--white)}
+  /* CTA buttons */
+  .btn {
+    display: inline-flex; align-items: center; gap: 10px;
+    padding: 14px 22px; border-radius: 999px;
+    font-family: var(--body); font-weight: 500; font-size: 14px;
+    border: 1px solid var(--ink);
+    background: var(--ink); color: var(--shell);
+    transition: transform .2s ease, box-shadow .25s ease, background .2s;
+  }
+  .btn:hover { transform: translateY(-1px); box-shadow: 0 14px 30px -16px rgba(27,34,56,.55); }
+  .btn-accent { background: var(--accent); border-color: var(--accent); color: #fff; }
+  .btn-ghost {
+    background: transparent; color: var(--ink); border: 1px solid var(--line-2);
+  }
+  .btn-ghost:hover { background: rgba(27,34,56,.04); }
+  .btn .arrow {
+    width: 20px; height: 20px; border-radius: 999px;
+    background: rgba(255,255,255,.18); display: inline-flex; align-items: center; justify-content: center;
+    font-size: 11px;
+  }
+  .btn-ghost .arrow { background: rgba(27,34,56,.08); color: var(--ink); }
 
-/* ========== COMPANY ========== */
-.company{background:var(--bg-warm)}
-.company-card{background:var(--white);border-radius:var(--radius-lg);box-shadow:var(--shadow-md);overflow:hidden;max-width:800px;margin:40px auto 0}
-.company-table{width:100%;border-collapse:collapse}
-.company-table tr{border-bottom:1px solid rgba(0,0,0,.05)}
-.company-table tr:last-child{border-bottom:none}
-.company-table th{padding:20px 28px;background:var(--bg-section);font-size:.85rem;font-weight:600;color:var(--dark);text-align:left;width:180px;vertical-align:top}
-.company-table td{padding:20px 28px;font-size:.9rem;color:var(--text);line-height:1.8}
+  /* section spacing */
+  section { padding: clamp(80px, 9vw, 140px) 0; position: relative; }
+  section.snug { padding: clamp(60px, 7vw, 110px) 0; }
 
-/* ========== FOOTER ========== */
-.footer{background:var(--dark);color:rgba(255,255,255,.5);padding:60px 0 30px}
-.footer-inner{display:grid;grid-template-columns:1.5fr 1fr 1fr;gap:40px;padding-bottom:40px;border-bottom:1px solid rgba(255,255,255,.08)}
-.footer-brand .logo{color:var(--white);margin-bottom:16px}
-.footer-brand p{font-size:.85rem;line-height:1.8;max-width:320px}
-.footer-links h5{color:var(--white);font-size:.9rem;font-weight:600;margin-bottom:16px}
-.footer-links a{display:block;font-size:.85rem;padding:4px 0;transition:var(--transition)}
-.footer-links a:hover{color:var(--primary)}
-.footer-bottom{display:flex;justify-content:space-between;align-items:center;padding-top:24px;font-size:.8rem}
+  /* fade-in observer */
+  .reveal { opacity: 0; transform: translateY(18px); transition: opacity .9s ease, transform .9s ease; }
+  .reveal.in { opacity: 1; transform: none; }
 
-/* ========== MOBILE NAV ========== */
-.mobile-nav{display:none;position:fixed;top:0;left:0;right:0;bottom:0;background:rgba(15,25,35,.98);z-index:999;flex-direction:column;align-items:center;justify-content:center;gap:28px;opacity:0;pointer-events:none;transition:var(--transition)}
-.mobile-nav.active{opacity:1;pointer-events:all}
-.mobile-nav a{font-size:1.2rem;color:var(--white);font-weight:500;transition:var(--transition)}
-.mobile-nav a:hover{color:var(--primary)}
+  /* hairline accent line that runs vertically as a brand anchor */
+  .brand-tick {
+    width: 1px; height: 36px; background: var(--ink); display: inline-block;
+  }
 
-/* ========== RESPONSIVE ========== */
-@media(max-width:1024px){
-  .hero-grid{grid-template-columns:1fr;text-align:center;padding:120px 0 60px}
-  .hero-sub{margin-left:auto;margin-right:auto}
-  .hero-actions{justify-content:center}
-  .hero-visual{display:none}
-  .problem-grid{grid-template-columns:1fr;gap:40px}
-  .problem-visual{order:-1}
-  .service-cards{grid-template-columns:1fr 1fr}
-  .strength-cards{grid-template-columns:1fr 1fr}
-  .flow-steps{grid-template-columns:1fr 1fr;gap:32px}
-  .flow-steps::before{display:none}
-  .dg-card{grid-template-columns:1fr;padding:40px}
-  .footer-inner{grid-template-columns:1fr 1fr}
-}
-@media(max-width:768px){
-  .section{padding:70px 0}
-  .nav{display:none}
-  .hamburger{display:flex}
-  .mobile-nav{display:flex}
-  .service-cards{grid-template-columns:1fr}
-  .strength-cards{grid-template-columns:1fr}
-  .flow-steps{grid-template-columns:1fr}
-  .company-table th{width:120px;padding:14px 16px}
-  .company-table td{padding:14px 16px}
-  .footer-inner{grid-template-columns:1fr}
-  .footer-bottom{flex-direction:column;gap:12px;text-align:center}
-  .hero h1{font-size:clamp(1.6rem,6vw,2.4rem)}
-  .dg-card{padding:28px 20px}
-}
-@media(max-width:480px){
-  .container{padding:0 16px}
-  .hero-actions{flex-direction:column;align-items:center}
-  .btn-primary,.btn-secondary,.btn-white,.btn-outline-white{width:100%;justify-content:center}
-  .cta-buttons{flex-direction:column;align-items:center}
-  .approach-pills{flex-direction:column}
-  .bucket-animation{flex-direction:column}
-}
+  /* dotted/striped placeholder */
+  .placeholder {
+    background:
+      repeating-linear-gradient(45deg, rgba(27,34,56,.06) 0 1px, transparent 1px 8px),
+      var(--paper);
+    border: 1px solid var(--line);
+    display: flex; align-items: center; justify-content: center;
+    color: var(--muted); font-family: var(--mono); font-size: 11px;
+    letter-spacing: 0.18em; text-transform: uppercase;
+  }
+
+  html { scroll-behavior: smooth; }
+  /* header scrolled state (vanilla JS toggles .hdr-scrolled) */
+  header.hdr-scrolled {
+    background: rgba(246,241,232,.85) !important;
+    -webkit-backdrop-filter: blur(10px) saturate(150%) !important;
+    backdrop-filter: blur(10px) saturate(150%) !important;
+    border-bottom: 1px solid var(--line) !important;
+  }
+  header.hdr-scrolled > .wrap { padding: 14px 0 !important; }
+  /* mobile niceties */
+  @media (max-width: 760px) {
+    header nav { display: none !important; }
+    header .btn { padding: 9px 14px !important; font-size: 12px !important; white-space: nowrap; }
+  }
+  @media (max-width: 480px) {
+    #top h1 { font-size: 37px !important; letter-spacing: -0.02em; }
+  }
+  /* responsive grid collapse (inline styles overridden) */
+  @media (max-width: 860px) {
+    [style*="grid-template-columns"] { grid-template-columns: 1fr !important; }
+    [style*="grid-template-columns:auto 1fr"] { grid-template-columns: auto 1fr !important; }
+    [style*="grid-template-columns:1fr 1fr;gap:12px"] { grid-template-columns: 1fr 1fr !important; }
+    section { padding: 64px 0; }
+  }
+
+
 </style>
 </head>
 <body>
-
-<!-- ========== HEADER ========== -->
-<header class="header" id="header">
-  <div class="container header-inner">
-    <a href="#" class="logo">
-      <div class="logo-icon">C&E</div>
-      <span>チキンアンドエッグ</span>
-    </a>
-    <nav class="nav">
-      <a href="#problem">課題</a>
-      <a href="#services">サービス</a>
-      <a href="#strengths">選ばれる理由</a>
-      <a href="#flow">導入の流れ</a>
-      <a href="#company">会社概要</a>
-      <a href="#cta" class="nav-cta">無料相談 →</a>
-    </nav>
-    <div class="hamburger" id="hamburger">
-      <span></span><span></span><span></span>
-    </div>
-  </div>
-</header>
-
-<!-- MOBILE NAV -->
-<div class="mobile-nav" id="mobileNav">
-  <a href="#problem" class="mobile-link">課題</a>
-  <a href="#services" class="mobile-link">サービス</a>
-  <a href="#strengths" class="mobile-link">選ばれる理由</a>
-  <a href="#flow" class="mobile-link">導入の流れ</a>
-  <a href="#company" class="mobile-link">会社概要</a>
-  <a href="#cta" class="nav-cta mobile-link">無料相談 →</a>
-</div>
-
-<!-- ========== HERO ========== -->
-<section class="hero" id="hero">
-  <div class="container hero-grid">
-    <div class="hero-content fade-up">
-      <div class="hero-badge">
-        静岡・愛知の中小企業に特化
-      </div>
-      <h1>「ただ集める」採用は、<br>もう終わりにしませんか？<br><em>人材に選ばれ続ける企業</em>へ。</h1>
-      <p class="hero-sub">「人が集まる仕組み」と「人が辞めない組織」で、<br>御社の採用課題を根本から解決します。</p>
-      <div class="hero-actions">
-        <a href="#cta" class="btn-primary">無料相談はこちら →</a>
-        <a href="#services" class="btn-secondary">サービスを見る</a>
-      </div>
-    </div>
-    <div class="hero-visual fade-up fade-up-delay">
-      <div class="hero-visual-inner">
-        <div class="hero-circle"></div>
-        <div class="hero-circle"></div>
-        <div class="hero-circle"></div>
-        <div class="hero-center-card">
-          <div class="hero-center-icon">🔄</div>
-          <h3>∞ 循環</h3>
-          <p>集客と定着の好循環が<br>企業を強くします</p>
-        </div>
-        <div class="float-card">
-          <div class="float-icon blue">🌐</div>
-          <div class="float-card-text">
-            <strong>Web集客</strong>
-            認知を拡大
-          </div>
-        </div>
-        <div class="float-card">
-          <div class="float-icon orange">🤝</div>
-          <div class="float-card-text">
-            <strong>定着支援</strong>
-            離職率を改善
-          </div>
-        </div>
-        <div class="float-card">
-          <div class="float-icon green">📈</div>
-          <div class="float-card-text">
-            <strong>採用DX</strong>
-            業務を効率化
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- ========== PROBLEM ========== -->
-<section class="problem section" id="problem">
-  <div class="container problem-grid">
-    <div class="problem-visual fade-up">
-      <div class="bucket-animation">
-        <div class="bucket-item before">
-          <div class="bucket-icon">🪣💧</div>
-          <div class="bucket-label">穴の空いたバケツ</div>
-          <div style="font-size:.8rem;color:#ef4444">採っても、辞めていく…</div>
-        </div>
-        <div class="bucket-arrow">↓</div>
-        <div class="bucket-item after">
-          <div class="bucket-icon">🏺✨</div>
-          <div class="bucket-label">しっかりした器</div>
-          <div style="font-size:.8rem;color:#10b981">人が集まり、定着する</div>
-        </div>
-      </div>
-    </div>
-    <div class="problem-content fade-up fade-up-delay">
-      <div class="section-label">Problem</div>
-      <h2>採用のゴールは<br>「入社」ではありません。<br><em>「定着しない」</em>ことの方が<br><strong>はるかに深刻</strong>です。</h2>
-      <div class="highlight-box">
-        <p>穴の空いたバケツに水を注いでも、水は溜まりません。<br>Webで「入り口」を広げ、組織開発で「器」を整えることで、御社を「選ばれ続ける企業」へ変革します。</p>
-      </div>
-      <div class="approach-pills">
-        <span class="approach-pill blue">🔵 入り口を広げる — Web × DX</span>
-        <span class="approach-pill orange">🟠 器を整える — 組織開発</span>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- ========== SERVICES ========== -->
-<section class="services section" id="services">
-  <div class="container">
-    <div class="services-header fade-up">
-      <div class="section-label" style="justify-content:center">Services</div>
-      <h2 class="section-title">中小企業の採用課題を解決する<br>2つのソリューション</h2>
-    </div>
-
-    <!-- TAMAGO -->
-    <div class="service-group fade-up">
-      <div class="service-group-header">
-        <div class="service-group-icon tamago">🥚</div>
-        <div class="service-group-title">
-          TAMAGO（卵）
-          <span>可能性を集める — 会いたい人材が、向こうからやってくる仕組みを作る</span>
-        </div>
-      </div>
-      <div class="service-cards stagger">
-        <div class="service-card">
-          <div class="service-card-icon blue">🌐</div>
-          <h4>採用ブランディングHP制作</h4>
-          <p>御社の本当の魅力を言語化し、求職者の心に刺さるWebサイトを構築します。</p>
-        </div>
-        <div class="service-card">
-          <div class="service-card-icon blue">💬</div>
-          <h4>LINE採用システム構築</h4>
-          <p>Lステップを活用し、説明会予約や選考連絡を自動化。歩留まりを高めます。</p>
-        </div>
-        <div class="service-card">
-          <div class="service-card-icon blue">🎯</div>
-          <h4>採用LP・求人運用</h4>
-          <p>ターゲットに合わせたLP制作と、Indeed等の運用で「今すぐ欲しい」に応えます。</p>
-        </div>
-      </div>
-    </div>
-
-    <!-- NIWATORI -->
-    <div class="service-group fade-up">
-      <div class="service-group-header">
-        <div class="service-group-icon niwatori">🐔</div>
-        <div class="service-group-title">
-          NIWATORI（鶏）
-          <span>育てて羽ばたかせる — 入社した人材が「ここで働けてよかった」と思える会社へ</span>
-        </div>
-      </div>
-      <div class="service-cards stagger">
-        <div class="service-card">
-          <div class="service-card-icon orange">🧭</div>
-          <h4>採用戦略・プロセス設計</h4>
-          <p>「誰に」「何を」伝えるか。MVV（ミッション・ビジョン・バリュー）から再定義します。</p>
-        </div>
-        <div class="service-card">
-          <div class="service-card-icon orange">🛡️</div>
-          <h4>定着支援・オンボーディング</h4>
-          <p>入社後3ヶ月の壁を越えるためのフォロー体制や、メンター制度を構築します。</p>
-        </div>
-        <div class="service-card">
-          <div class="service-card-icon orange">💡</div>
-          <h4>1on1・管理者コーチング</h4>
-          <p>現場のリーダーが部下の本音を引き出し、離職を防ぐマネジメント力を養います。</p>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- ========== STRENGTHS ========== -->
-<section class="strengths section" id="strengths">
-  <div class="container">
-    <div class="text-center fade-up">
-      <div class="section-label" style="justify-content:center">Why Us</div>
-      <h2 class="section-title">なぜチキンアンドエッグが<br>選ばれるのか</h2>
-      <p class="section-desc mx-auto">圧倒的な実績と専門性で、採用成功へ導きます</p>
-    </div>
-    <div class="strength-cards stagger">
-      <div class="strength-card">
-        <div class="strength-num">01</div>
-        <h4>最新のDX技術で<br>採用業務を効率化</h4>
-        <p>採用管理システムや自動化ツールなど、最新のデジタル技術を活用して採用業務を効率化。中小企業でも大手に負けない採用力を実現します。</p>
-      </div>
-      <div class="strength-card">
-        <div class="strength-num">02</div>
-        <h4>実戦型の支援</h4>
-        <p>綺麗なだけのホームページを作る制作会社ではありません。机上の空論を語るだけのコンサルタントでもありません。現場で培った実践的なノウハウで成果を出します。</p>
-      </div>
-      <div class="strength-card">
-        <div class="strength-num">03</div>
-        <h4>Web制作 × 人事コンサル</h4>
-        <p>デジタルツールの構築と組織開発の両方を提供できる唯一無二の存在。この2つの武器で、御社の採用課題を根本から解決します。</p>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- ========== FLOW ========== -->
-<section class="flow section" id="flow">
-  <div class="container">
-    <div class="text-center fade-up">
-      <div class="section-label" style="justify-content:center">Flow</div>
-      <h2 class="section-title">導入の流れ</h2>
-      <p class="section-desc mx-auto">4つのステップで、御社を「選ばれ続ける企業」へ</p>
-    </div>
-    <div class="flow-steps stagger">
-      <div class="flow-step">
-        <div class="flow-step-num">01</div>
-        <h4>無料相談・現状診断</h4>
-        <p>御社の採用課題や悩みをじっくりとお聞きします。現状の分析から始めましょう。</p>
-      </div>
-      <div class="flow-step">
-        <div class="flow-step-num">02</div>
-        <h4>採用基盤の構築</h4>
-        <p>HP制作・LINE構築で、まずは応募を増やす仕組みを作ります。認知と集客の土台を整えます。</p>
-      </div>
-      <div class="flow-step">
-        <div class="flow-step-num">03</div>
-        <h4>採用活動の実践</h4>
-        <p>応募者対応から面接まで、実際の採用活動を伴走しながらサポートします。</p>
-      </div>
-      <div class="flow-step">
-        <div class="flow-step-num">04</div>
-        <h4>組織課題へのアプローチ</h4>
-        <p>定着支援・制度設計へステップアップ。「選ばれ続ける企業」への変革を実現します。</p>
-      </div>
-    </div>
-    <div class="flow-note fade-up">
-      <strong>※</strong> Webを作って終わりではなく、そこからがスタートです。継続的な改善とサポートで、採用成功を実現します。
-    </div>
-  </div>
-</section>
-
-<!-- ========== DIGITAL GRID ========== -->
-<section class="digital-grid section" id="digital-grid">
-  <div class="container">
-    <div class="dg-card fade-up">
-      <div class="dg-content">
-        <div class="section-label">Partnership</div>
-        <h3>採用だけじゃない。<br>電気代も、削減できます。</h3>
-        <p>デジタルグリッド株式会社とのパートナー契約により、中小企業の電力コスト削減もサポート。経営の固定費を見直す第一歩をご提案します。</p>
-        <div class="dg-features">
-          <div class="dg-feature">
-            <div class="dg-feature-icon">⚡</div>
-            <div>
-              <h5>電気代を大幅削減</h5>
-              <p>中間マージンの排除で実現</p>
-            </div>
-          </div>
-          <div class="dg-feature">
-            <div class="dg-feature-icon">🔒</div>
-            <div>
-              <h5>切り替えリスクなし</h5>
-              <p>同じ送電網・同じ品質</p>
-            </div>
-          </div>
-          <div class="dg-feature">
-            <div class="dg-feature-icon">🌱</div>
-            <div>
-              <h5>RE100・脱炭素対応</h5>
-              <p>再エネ電源の指定も可能</p>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="dg-visual">
-        <div class="dg-partner-badge">⚡ パートナー：DIGITAL GRID</div>
-        <div class="dg-chart">
-          <div class="dg-chart-ring"></div>
-          <div class="dg-chart-ring-fill"></div>
-          <div class="dg-chart-center">
-            <span class="big">削減</span>
-            <span class="label">電力コスト</span>
-          </div>
-        </div>
-        <a href="#cta" class="btn-primary" style="background:#059669;box-shadow:0 8px 25px rgba(5,150,105,.35)">電力コスト削減の詳細を見る →</a>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- ========== CTA ========== -->
-<section class="cta" id="cta">
-  <div class="container cta-inner fade-up">
-    <h2>まずは無料相談から<br>始めませんか？</h2>
-    <p>採用のお悩みや課題をお聞かせください。<br>最適なソリューションをご提案いたします。</p>
-    <div class="cta-buttons">
-      <a href="mailto:info@chickenandegg.co.jp" class="btn-white">✉️ メールで相談する</a>
-      <a href="#" class="btn-outline-white">💬 LINEで相談する</a>
-    </div>
-  </div>
-</section>
-
-<!-- ========== COMPANY ========== -->
-<section class="company section" id="company">
-  <div class="container">
-    <div class="text-center fade-up">
-      <div class="section-label" style="justify-content:center">Company</div>
-      <h2 class="section-title">会社概要</h2>
-    </div>
-    <div class="company-card fade-up">
-      <table class="company-table">
-        <tr><th>会社名</th><td>株式会社チキンアンドエッグ</td></tr>
-        <tr><th>設立年月日</th><td>2025年9月</td></tr>
-        <tr><th>代表者</th><td>代表取締役 内山 徹</td></tr>
-        <tr><th>事業内容</th><td>中小企業向け人材採用支援サービス<br>採用業務DXコンサルティング<br>人材採用プラットフォームの提供</td></tr>
-        <tr><th>所在地</th><td>〒438-0074<br>静岡県磐田市二之宮478-103</td></tr>
-        <tr><th>お問い合わせ</th><td>info@chickenandegg.co.jp</td></tr>
-      </table>
-    </div>
-  </div>
-</section>
-
-<!-- ========== FOOTER ========== -->
-<footer class="footer">
-  <div class="container">
-    <div class="footer-inner">
-      <div class="footer-brand">
-        <div class="logo">
-          <div class="logo-icon">C&E</div>
-          <span>チキンアンドエッグ</span>
-        </div>
-        <p>静岡・愛知の中小企業に「人が集まる仕組み」と「人が辞めない組織」を提供する採用支援パートナーです。</p>
-      </div>
-      <div class="footer-links">
-        <h5>サービス</h5>
-        <a href="#services">TAMAGO（卵）</a>
-        <a href="#services">NIWATORI（鶏）</a>
-        <a href="#digital-grid">電力コスト削減</a>
-      </div>
-      <div class="footer-links">
-        <h5>企業情報</h5>
-        <a href="#company">会社概要</a>
-        <a href="#cta">お問い合わせ</a>
-        <a href="mailto:info@chickenandegg.co.jp">info@chickenandegg.co.jp</a>
-      </div>
-    </div>
-    <div class="footer-bottom">
-      <span>&copy; 2025 株式会社チキンアンドエッグ All Rights Reserved.</span>
-      <span>静岡県磐田市予之宮478-103</span>
-    </div>
-  </div>
-</footer>
-
-<!-- ========== SCRIPTS ========== -->
+<header style="position:sticky;top:0;z-index:50;background:transparent;backdrop-filter:none;-webkit-backdrop-filter:none;border-bottom:1px solid transparent;transition:all .35s ease"><div class="wrap" style="display:flex;align-items:center;justify-content:space-between;padding:22px 0;transition:padding .35s"><a href="#top" aria-label="Chicken and Egg"><span style="display:inline-flex;align-items:center;gap:11px;color:currentColor"><img src="assets/logo-mark.png" alt="Chicken and Egg" width="30" height="39.900000000000006" style="display:block;object-fit:contain"/><span style="font-family:var(--display);font-weight:700;font-size:16px;letter-spacing:0.04em">Chicken<span style="color:var(--accent);margin:0 3px">&amp;</span>Egg</span></span></a><nav style="display:flex;gap:32px"><a href="#sec-0" style="font-size:13px;color:var(--ink-2);font-weight:500;position:relative">サービス<span style="position:absolute;left:0;right:0;bottom:-4px;height:1px;background:var(--accent);transform:scaleX(0);transform-origin:left;transition:transform .3s" class="nav-underline"></span></a><a href="#sec-1" style="font-size:13px;color:var(--ink-2);font-weight:500;position:relative">実績<span style="position:absolute;left:0;right:0;bottom:-4px;height:1px;background:var(--accent);transform:scaleX(0);transform-origin:left;transition:transform .3s" class="nav-underline"></span></a><a href="#sec-2" style="font-size:13px;color:var(--ink-2);font-weight:500;position:relative">会社情報<span style="position:absolute;left:0;right:0;bottom:-4px;height:1px;background:var(--accent);transform:scaleX(0);transform-origin:left;transition:transform .3s" class="nav-underline"></span></a><a href="#sec-3" style="font-size:13px;color:var(--ink-2);font-weight:500;position:relative">お役立ち<span style="position:absolute;left:0;right:0;bottom:-4px;height:1px;background:var(--accent);transform:scaleX(0);transform-origin:left;transition:transform .3s" class="nav-underline"></span></a></nav><div style="display:flex;gap:10px;align-items:center"><a href="#contact" class="btn btn-ghost" style="padding:10px 16px;font-size:13px">資料DL<span class="arrow">↓</span></a><a href="#contact" class="btn btn-accent" style="padding:10px 16px;font-size:13px">無料相談<span class="arrow">→</span></a></div></div><style>
+        header nav a:hover .nav-underline { transform: scaleX(1); }
+      </style></header><section id="top" style="padding-top:40px;padding-bottom:0;overflow:hidden"><div class="wrap" style="position:relative"><div style="display:flex;justify-content:space-between;align-items:center;padding:8px 0 56px;border-bottom:1px solid var(--line);margin-bottom:64px"><span class="eyebrow">A Recruitment Loop, By Design</span><span class="num" style="font-size:11px;color:var(--muted);letter-spacing:.18em">EST. 2025 · SHIZUOKA / AICHI</span></div><div style="display:grid;grid-template-columns:1.05fr 0.95fr;gap:60px;align-items:center"><div class="reveal"><div class="label-jp" style="margin-bottom:22px">採用ブランディング × 人事コンサルティング</div><h1 class="display" style="font-size:clamp(44px, 6.4vw, 92px);margin:0;font-family:var(--serif);font-weight:700;letter-spacing:-0.005em">採れて、育って、<br/>また<span style="color:var(--accent)">誰か</span>を呼ぶ。</h1><p style="font-family:var(--display);font-weight:500;font-size:18px;margin-top:28px;color:var(--ink-2);letter-spacing:.02em;line-height:1.85;max-width:520px">採用は、点ではなく <strong style="font-weight:700">循環</strong>。<br/>卵を集め、鶏を育て、その鶏がまた誰かを呼ぶ ―<br/>中小企業のための、伴走する採用パートナー。</p><div style="display:flex;gap:14px;margin-top:44px;flex-wrap:wrap"><a href="#contact" class="btn btn-accent">無料相談する<span class="arrow">→</span></a><a href="#download" class="btn btn-ghost">3分でわかる会社案内（PDF）<span class="arrow">↓</span></a></div><div style="margin-top:56px;padding-top:28px;border-top:1px solid var(--line);display:grid;grid-template-columns:repeat(3, 1fr);gap:24px"><div><div class="eyebrow" style="font-size:10px">対応エリア</div><div class="" style="font-family:var(--display);font-weight:700;font-size:22px;margin-top:6px;letter-spacing:-0.01em">静岡 ／ 愛知</div><div style="font-size:11px;color:var(--muted);margin-top:2px">地場の中小企業に特化</div></div><div><div class="eyebrow" style="font-size:10px">支援領域</div><div class="" style="font-family:var(--display);font-weight:700;font-size:22px;margin-top:6px;letter-spacing:-0.01em">採用 + 定着</div><div style="font-size:11px;color:var(--muted);margin-top:2px">Web〜オンボーディングまで</div></div><div><div class="eyebrow" style="font-size:10px">支援企業</div><div class="num" style="font-family:var(--mono);font-weight:700;font-size:22px;margin-top:6px;letter-spacing:-0.01em">32社</div><div style="font-size:11px;color:var(--muted);margin-top:2px">製造／介護／飲食ほか</div></div></div></div><div class="reveal" style="position:relative"><div style="position:relative;aspect-ratio:1 / 1;width:100%;max-width:560px;margin-left:auto"><div style="position:relative;width:560px;height:560px;max-width:100%"><svg viewBox="0 0 560 560" width="100%" height="100%" aria-hidden="true"><defs><radialGradient id="loopGlow" cx="50%" cy="50%" r="50%"><stop offset="0%" stop-color="var(--accent)" stop-opacity=".07"></stop><stop offset="55%" stop-color="var(--accent)" stop-opacity="0"></stop></radialGradient></defs><rect x="0" y="0" width="560" height="560" fill="url(#loopGlow)"></rect><circle cx="280" cy="280" r="246.4" fill="none" stroke="var(--ink)" stroke-opacity="0.05"></circle><circle cx="280" cy="280" r="192.192" fill="none" stroke="var(--ink)" stroke-opacity="0.07"></circle><circle cx="280" cy="280" r="137.984" fill="none" stroke="var(--ink)" stroke-opacity="0.09"></circle><circle cx="280" cy="280" r="83.77600000000001" fill="none" stroke="var(--ink)" stroke-opacity="0.11"></circle><g style="transform-origin:center;animation:loop-spin 36s linear infinite"><circle cx="280" cy="280" r="218.4" fill="none" stroke="var(--ink)" stroke-opacity=".22" stroke-dasharray="1 4"></circle><g><ellipse cx="280" cy="61.599999999999994" rx="7" ry="9" fill="var(--ink)"></ellipse><text x="280" y="86.6" text-anchor="middle" font-family="var(--mono)" font-size="9.5" letter-spacing="2" fill="var(--muted)">EGG</text></g><g><ellipse cx="498.4" cy="280" rx="9" ry="10" fill="var(--accent)"></ellipse><text x="498.4" y="306" text-anchor="middle" font-family="var(--mono)" font-size="9.5" letter-spacing="2" fill="var(--muted)">HATCH</text></g><g><ellipse cx="280" cy="498.4" rx="11" ry="11" fill="var(--ink)"></ellipse><text x="280" y="525.4" text-anchor="middle" font-family="var(--mono)" font-size="9.5" letter-spacing="2" fill="var(--muted)">GROW</text></g><g><ellipse cx="61.599999999999994" cy="280" rx="8" ry="9" fill="var(--ink)"></ellipse><text x="61.599999999999994" y="305" text-anchor="middle" font-family="var(--mono)" font-size="9.5" letter-spacing="2" fill="var(--muted)">RETURN</text></g></g><g style="transform-origin:center"><ellipse cx="280" cy="280" rx="50.4" ry="61.6" fill="var(--paper)" stroke="var(--ink)" stroke-width="1.2"><animate attributeName="rx" values="44.800000000000004;61.6;50.4;44.800000000000004" dur="8s" repeatCount="indefinite"></animate><animate attributeName="ry" values="61.6;50.4;67.2;61.6" dur="8s" repeatCount="indefinite"></animate></ellipse><circle cx="280" cy="280" r="5" fill="var(--accent)"><animate attributeName="r" values="5;7;4;5" dur="8s" repeatCount="indefinite"></animate></circle></g><circle r="3" fill="var(--accent)"><animateMotion dur="18s" repeatCount="indefinite" path="M 498.4 280
+                   A 218.4 218.4 0 1 1 61.599999999999994 280
+                   A 218.4 218.4 0 1 1 498.4 280 Z"></animateMotion></circle></svg><style>
+        @keyframes loop-spin {
+          from { transform: rotate(0deg); }
+          to   { transform: rotate(360deg); }
+        }
+      </style></div><div style="position:absolute;left:-8px;bottom:-28px;font-family:var(--mono);font-size:10px;letter-spacing:.2em;color:var(--muted);text-transform:uppercase">LOOP — Egg · Hatch · Grow · Return</div></div></div></div><div style="margin-top:110px;margin-bottom:8px;position:relative"><div class="display" style="font-size:clamp(120px, 22vw, 320px);line-height:0.85;font-family:var(--display);font-weight:900;color:var(--ink);letter-spacing:-0.02em;display:flex;align-items:baseline;gap:0.02em"><span>LOOP</span><span style="color:var(--accent);margin-left:0.04em">.</span></div><div style="position:absolute;right:0;bottom:18px;font-family:var(--display);font-weight:500;font-size:13px;color:var(--muted);letter-spacing:.18em;text-align:right">採用を、循環させる。<br/><span style="font-family:var(--mono);font-size:10px;letter-spacing:.22em">／ A NEW RHYTHM FOR HIRING</span></div></div></div></section><section id="sec-0" style="background:var(--paper)"><div class="wrap"><div style="display:flex;align-items:center;gap:14px;margin-bottom:28px"><span class="num" style="font-size:11px;color:var(--muted);letter-spacing:.1em">/ 01</span><span class="brand-tick" style="height:14px;background:var(--ink);opacity:0.35"></span><span class="eyebrow">The Problem</span><span class="label-jp" style="margin-left:4px">現状の課題</span></div><div style="display:grid;grid-template-columns:1.1fr 0.9fr;gap:72px;align-items:start"><div class="reveal"><h2 class="display" style="font-size:clamp(36px, 4.4vw, 64px);margin:0;font-family:var(--serif);font-weight:700">採用は、<br/><span style="color:var(--accent)">穴の空いた壺</span>に<br/>水を注ぐ作業ですか。</h2><p style="margin-top:32px;font-size:15px;line-height:1.95;color:var(--ink-2);max-width:540px">人が辞めるたびに、また広告を出す。 また面接の予定を組み、また同じ説明をする。<br/><br/>採用予算は、入口（採用コスト）と出口（離職コスト）の両方から漏れ続けている。<strong style="color:var(--ink)">1人の離職で、企業が失うコストは約400万円</strong>。 採用は、入口だけを広げても水位は上がりません。</p></div><div class="reveal"><svg viewBox="0 0 380 380" width="100%" style="max-width:420px;margin:0 auto;display:block" aria-hidden="true"><g opacity=".35"><line x1="0" y1="200" x2="380" y2="200" stroke="var(--line-2)" stroke-dasharray="2 6"></line></g><path d="M 100 130
+               C 100 110, 280 110, 280 130
+               L 270 270
+               C 268 295, 112 295, 110 270 Z" fill="var(--shell)" stroke="var(--ink)" stroke-width="1.5"></path><ellipse cx="190" cy="130" rx="90" ry="14" fill="none" stroke="var(--ink)" stroke-width="1.5"></ellipse><path d="M 113 195
+               C 145 188, 235 188, 267 195
+               L 265 250
+               C 263 268, 117 268, 115 250 Z" fill="var(--accent)" opacity=".18"></path><circle cx="155" cy="235" r="4" fill="var(--paper)" stroke="var(--ink)" stroke-width="1.2"></circle><circle cx="225" cy="220" r="5" fill="var(--paper)" stroke="var(--ink)" stroke-width="1.2"></circle><circle cx="200" cy="260" r="3.5" fill="var(--paper)" stroke="var(--ink)" stroke-width="1.2"></circle><circle cx="155" cy="245" r="2.2" style="fill:var(--accent)"><animate attributeName="cy" values="245;340;245" dur="2.4s" repeatCount="indefinite"></animate><animate attributeName="opacity" values="1;0;1" dur="2.4s" repeatCount="indefinite"></animate></circle><circle cx="225" cy="230" r="2.2" style="fill:var(--accent)"><animate attributeName="cy" values="230;340;230" dur="2.9s" repeatCount="indefinite"></animate><animate attributeName="opacity" values="1;0;1" dur="2.9s" repeatCount="indefinite"></animate></circle><circle cx="200" cy="270" r="2.2" style="fill:var(--accent)"><animate attributeName="cy" values="270;340;270" dur="3.4s" repeatCount="indefinite"></animate><animate attributeName="opacity" values="1;0;1" dur="3.4s" repeatCount="indefinite"></animate></circle><path d="M 190 30 L 190 110" stroke="var(--ink)" stroke-width="1.2" stroke-dasharray="3 4"></path><text x="190" y="20" text-anchor="middle" style="font-family:var(--mono);font-size:10px;letter-spacing:0.2em" fill="var(--muted)">採用予算 / BUDGET</text><text x="338" y="345" text-anchor="end" style="font-family:var(--mono);font-size:10px;letter-spacing:0.2em" fill="var(--muted)">離職 / LEAK</text><path d="M 155 235 L 70 250 L 60 250" stroke="var(--muted)" stroke-width="0.8" fill="none"></path><text x="58" y="246" text-anchor="end" style="font-family:var(--mono);font-size:9.5px;letter-spacing:0.16em" fill="var(--muted)">早期離職</text><path d="M 225 220 L 320 200 L 332 200" stroke="var(--muted)" stroke-width="0.8" fill="none"></path><text x="334" y="196" style="font-family:var(--mono);font-size:9.5px;letter-spacing:0.16em" fill="var(--muted)">ミスマッチ</text></svg></div></div><div class="reveal"><div style="margin-top:96px;padding:40px 44px;background:var(--bg-2);border:1px solid var(--line);border-radius:6px;position:relative"><div style="position:absolute;top:-12px;left:36px;padding:4px 10px;background:var(--ink);color:var(--shell);font-family:var(--mono);font-size:10px;letter-spacing:.2em">SELF CHECK</div><h3 class="display" style="font-size:22px;margin:4px 0 18px;font-weight:700">あなたの会社にも、こんな兆候はありませんか？</h3><ul style="list-style:none;padding:0;margin:0;column-count:2;column-gap:48px"><li style="display:flex;align-items:flex-start;gap:14px;padding:12px 0;border-bottom:1px dashed var(--line);break-inside:avoid"><span style="flex-shrink:0;margin-top:6px;width:12px;height:12px;border:1.5px solid var(--ink);border-radius:2px"></span><span style="font-size:14px;color:var(--ink-2)">求人を出しても、応募が集まらない</span></li><li style="display:flex;align-items:flex-start;gap:14px;padding:12px 0;border-bottom:1px dashed var(--line);break-inside:avoid"><span style="flex-shrink:0;margin-top:6px;width:12px;height:12px;border:1.5px solid var(--ink);border-radius:2px"></span><span style="font-size:14px;color:var(--ink-2)">面接まで来ても、ほとんど辞退される</span></li><li style="display:flex;align-items:flex-start;gap:14px;padding:12px 0;border-bottom:1px dashed var(--line);break-inside:avoid"><span style="flex-shrink:0;margin-top:6px;width:12px;height:12px;border:1.5px solid var(--ink);border-radius:2px"></span><span style="font-size:14px;color:var(--ink-2)">やっと採用しても、半年以内に辞めてしまう</span></li><li style="display:flex;align-items:flex-start;gap:14px;padding:12px 0;border-bottom:1px dashed var(--line);break-inside:avoid"><span style="flex-shrink:0;margin-top:6px;width:12px;height:12px;border:1.5px solid var(--ink);border-radius:2px"></span><span style="font-size:14px;color:var(--ink-2)">新入社員と既存社員の温度差が広がっている</span></li><li style="display:flex;align-items:flex-start;gap:14px;padding:12px 0;border-bottom:1px dashed var(--line);break-inside:avoid"><span style="flex-shrink:0;margin-top:6px;width:12px;height:12px;border:1.5px solid var(--ink);border-radius:2px"></span><span style="font-size:14px;color:var(--ink-2)">経営者・現場任せで、採用の仕組み化ができていない</span></li></ul></div></div></div></section><section id="sec-1"><div class="wrap"><div style="display:flex;align-items:center;gap:14px;margin-bottom:28px"><span class="num" style="font-size:11px;color:var(--muted);letter-spacing:.1em">/ 02</span><span class="brand-tick" style="height:14px;background:var(--ink);opacity:0.35"></span><span class="eyebrow">Services</span><span class="label-jp" style="margin-left:4px">サービス</span></div><div style="display:grid;grid-template-columns:1fr 1fr;gap:40px;align-items:end;margin-bottom:56px"><div class="reveal"><h2 class="display" style="font-size:clamp(36px, 4.4vw, 60px);margin:0;font-family:var(--serif);font-weight:700">採用の <span style="color:var(--accent)">入口</span>と<br/>組織の <span style="color:var(--accent)">育成</span>を、<br/>ひとつの円で。</h2></div><div class="reveal"><p style="font-size:15px;line-height:2;color:var(--ink-2);margin-top:0">Web制作会社でも、人事コンサル会社でもない。 「採れる」と「育つ」を分けずに、ひとつのループで設計する ― それが、チキンアンドエッグの提供価値です。</p></div></div><div class="reveal"><div style="position:relative;display:grid;grid-template-columns:1fr auto 1fr;align-items:center;gap:0;padding:20px 0"><div style="display:flex;flex-direction:column;gap:18px"><div style="text-align:left;margin-bottom:10px"><div class="num" style="font-size:11px;letter-spacing:.22em;color:var(--accent)">01 / TAMAGO</div><div class="display" style="font-size:22px;font-weight:700;margin-top:8px;font-family:var(--serif)">可能性を集める</div><div class="eyebrow" style="margin-top:6px">EGG ― Gather Potential</div></div><div style="background:var(--paper);border:1px solid var(--line);padding:20px 22px;text-align:left;position:relative;transition:border-color .25s, transform .25s"><div class="num" style="font-size:10px;color:var(--muted);letter-spacing:.22em">T·01</div><div style="font-family:var(--display);font-weight:700;font-size:17px;margin-top:6px">採用ブランディングHP制作</div><div style="font-size:12px;color:var(--muted);margin-top:4px">会いたい人を呼ぶ入口</div><a href="#" style="position:absolute;top:18px;right:18px;font-family:var(--mono);font-size:10px;letter-spacing:.2em;color:var(--accent)">DETAIL →</a></div><div style="background:var(--paper);border:1px solid var(--line);padding:20px 22px;text-align:left;position:relative;transition:border-color .25s, transform .25s"><div class="num" style="font-size:10px;color:var(--muted);letter-spacing:.22em">T·02</div><div style="font-family:var(--display);font-weight:700;font-size:17px;margin-top:6px">LINE採用システム構築</div><div style="font-size:12px;color:var(--muted);margin-top:4px">応募の摩擦を下げる</div><a href="#" style="position:absolute;top:18px;right:18px;font-family:var(--mono);font-size:10px;letter-spacing:.2em;color:var(--accent)">DETAIL →</a></div><div style="background:var(--paper);border:1px solid var(--line);padding:20px 22px;text-align:left;position:relative;transition:border-color .25s, transform .25s"><div class="num" style="font-size:10px;color:var(--muted);letter-spacing:.22em">T·03</div><div style="font-family:var(--display);font-weight:700;font-size:17px;margin-top:6px">採用LP・求人運用</div><div style="font-size:12px;color:var(--muted);margin-top:4px">母集団を継続的に集める</div><a href="#" style="position:absolute;top:18px;right:18px;font-family:var(--mono);font-size:10px;letter-spacing:.2em;color:var(--accent)">DETAIL →</a></div></div><div style="padding:0 36px;display:flex;flex-direction:column;align-items:center"><svg viewBox="0 0 240 360" width="200" height="320" aria-hidden="true"><defs><marker id="ah" viewBox="0 0 10 10" refX="6" refY="5" markerWidth="6" markerHeight="6" orient="auto"><path d="M 0 0 L 10 5 L 0 10 Z" fill="var(--ink)"></path></marker></defs><path d="M 120 30
+               C 200 30, 200 170, 120 170
+               C 40 170, 40 30, 120 30 Z" fill="none" stroke="var(--ink)" stroke-width="1.2" stroke-opacity=".5"></path><path d="M 120 190
+               C 200 190, 200 330, 120 330
+               C 40 330, 40 190, 120 190 Z" fill="none" stroke="var(--ink)" stroke-width="1.2" stroke-opacity=".5"></path><text x="120" y="100" text-anchor="middle" style="font-family:var(--display);font-weight:700;font-size:16px" fill="var(--ink)">TAMAGO</text><text x="120" y="118" text-anchor="middle" style="font-family:var(--mono);font-size:9px;letter-spacing:.22em" fill="var(--muted)">EGG / GATHER</text><text x="120" y="262" text-anchor="middle" style="font-family:var(--display);font-weight:700;font-size:16px" fill="var(--ink)">NIWATORI</text><text x="120" y="280" text-anchor="middle" style="font-family:var(--mono);font-size:9px;letter-spacing:.22em" fill="var(--muted)">FOWL / GROW</text><circle cx="120" cy="180" r="5" style="fill:var(--accent)"></circle><circle r="4" style="fill:var(--accent)"><animateMotion dur="9s" repeatCount="indefinite" path="M 120 30 C 200 30, 200 170, 120 170 C 40 170, 40 30, 120 30 Z"></animateMotion></circle><circle r="4" style="fill:var(--ink)"><animateMotion dur="9s" repeatCount="indefinite" begin="-4.5s" path="M 120 190 C 200 190, 200 330, 120 330 C 40 330, 40 190, 120 190 Z"></animateMotion></circle></svg></div><div style="display:flex;flex-direction:column;gap:18px"><div style="text-align:right;margin-bottom:10px"><div class="num" style="font-size:11px;letter-spacing:.22em;color:var(--accent)">02 / NIWATORI</div><div class="display" style="font-size:22px;font-weight:700;margin-top:8px;font-family:var(--serif)">育てて羽ばたかせる</div><div class="eyebrow" style="margin-top:6px">FOWL ― Grow and Set Free</div></div><div style="background:var(--paper);border:1px solid var(--line);padding:20px 22px;text-align:right;position:relative;transition:border-color .25s, transform .25s"><div class="num" style="font-size:10px;color:var(--muted);letter-spacing:.22em">N·01</div><div style="font-family:var(--display);font-weight:700;font-size:17px;margin-top:6px">採用戦略・プロセス設計</div><div style="font-size:12px;color:var(--muted);margin-top:4px">選考の歩留まりを設計</div><a href="#" style="position:absolute;top:18px;left:18px;font-family:var(--mono);font-size:10px;letter-spacing:.2em;color:var(--accent)">DETAIL →</a></div><div style="background:var(--paper);border:1px solid var(--line);padding:20px 22px;text-align:right;position:relative;transition:border-color .25s, transform .25s"><div class="num" style="font-size:10px;color:var(--muted);letter-spacing:.22em">N·02</div><div style="font-family:var(--display);font-weight:700;font-size:17px;margin-top:6px">定着支援・オンボーディング</div><div style="font-size:12px;color:var(--muted);margin-top:4px">辞めない初動90日</div><a href="#" style="position:absolute;top:18px;left:18px;font-family:var(--mono);font-size:10px;letter-spacing:.2em;color:var(--accent)">DETAIL →</a></div><div style="background:var(--paper);border:1px solid var(--line);padding:20px 22px;text-align:right;position:relative;transition:border-color .25s, transform .25s"><div class="num" style="font-size:10px;color:var(--muted);letter-spacing:.22em">N·03</div><div style="font-family:var(--display);font-weight:700;font-size:17px;margin-top:6px">1on1・管理者コーチング</div><div style="font-size:12px;color:var(--muted);margin-top:4px">現場が育てる組織へ</div><a href="#" style="position:absolute;top:18px;left:18px;font-family:var(--mono);font-size:10px;letter-spacing:.2em;color:var(--accent)">DETAIL →</a></div></div></div></div><div class="reveal"><div style="margin-top:64px;padding:26px 36px;border:1px solid var(--line);display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:18px;background:var(--paper)"><div><div class="eyebrow" style="margin-bottom:6px">Indicative Pricing</div><div style="font-size:14px;color:var(--ink-2)">単発の制作・スポット支援は <strong class="num">¥38万〜</strong>、 月次の伴走支援は <strong class="num">¥18万 / 月〜</strong> から。</div></div><a href="#contact" class="btn btn-ghost" style="padding:10px 18px;font-size:13px">詳細見積りを依頼する<span class="arrow">→</span></a></div></div></div></section><section id="sec-2" style="background:var(--paper)"><div class="wrap"><div style="display:flex;align-items:center;gap:14px;margin-bottom:28px"><span class="num" style="font-size:11px;color:var(--muted);letter-spacing:.1em">/ 03</span><span class="brand-tick" style="height:14px;background:var(--ink);opacity:0.35"></span><span class="eyebrow">Why Us</span><span class="label-jp" style="margin-left:4px">選ばれる理由</span></div><div style="display:grid;grid-template-columns:0.9fr 1.1fr;gap:60px;margin-bottom:64px"><div class="reveal"><h2 class="display" style="font-size:clamp(36px, 4.4vw, 60px);margin:0;font-family:var(--serif);font-weight:700;letter-spacing:-0.005em"><span style="color:var(--accent)">3つ</span>の、<br/>選ばれる理由。</h2></div><div class="reveal"><p style="font-size:15px;line-height:2;color:var(--ink-2)">『なぜ、地方の中小企業がチキンアンドエッグを選ぶのか』。 全国規模の代行会社にも、ハイエンドコンサルにも当てはまらない、私たちの3つの輪郭です。</p></div></div><div style="display:flex;flex-direction:column;gap:0"><div class="reveal"><div style="display:grid;grid-template-columns:100px 1fr 360px;gap:36px;align-items:start;padding:44px 0;border-top:1px solid var(--ink)"><div class="num" style="font-size:64px;font-family:var(--mono);font-weight:500;color:var(--ink);letter-spacing:-0.04em;line-height:1">01</div><div><div class="eyebrow" style="margin-bottom:12px">TWO-AXIS</div><h3 class="display" style="font-size:28px;margin:0;font-family:var(--display);font-weight:700">Web × 人事コンサルの両軸</h3><p style="font-size:14.5px;line-height:1.95;color:var(--ink-2);margin-top:14px;max-width:580px;white-space:pre-line">採用LP・LINE採用・採用管理ツール等のWeb領域と、戦略・定着・コーチングの人事コンサル領域を一社で。
+採れて終わり、ではなく、辞めない仕組みまで一気通貫で設計します。</p></div><div style="border-left:1px solid var(--line);padding-left:24px;align-self:center"><div class="eyebrow" style="margin-bottom:8px">Case Note</div><div class="serif" style="font-size:15px;line-height:1.8;color:var(--ink)">ケース：採用LP制作後、入社者の3ヶ月離職率を 28% → 4%に。</div></div></div></div><div class="reveal"><div style="display:grid;grid-template-columns:100px 1fr 360px;gap:36px;align-items:start;padding:44px 0;border-top:1px solid var(--line)"><div class="num" style="font-size:64px;font-family:var(--mono);font-weight:500;color:var(--ink);letter-spacing:-0.04em;line-height:1">02</div><div><div class="eyebrow" style="margin-bottom:12px">ON THE GROUND</div><h3 class="display" style="font-size:28px;margin:0;font-family:var(--display);font-weight:700">机上論ではない、実戦型の伴走</h3><p style="font-size:14.5px;line-height:1.95;color:var(--ink-2);margin-top:14px;max-width:580px;white-space:pre-line">ターゲット企業数 32社・現場ヒアリング数 200回超。レポートだけを納品して終わるのではなく、
+面接同席・採用会議出席・現場1on1まで含めて、実装まで一緒に走ります。</p></div><div style="border-left:1px solid var(--line);padding-left:24px;align-self:center"><div class="eyebrow" style="margin-bottom:8px">Case Note</div><div class="serif" style="font-size:15px;line-height:1.8;color:var(--ink)">月2回の採用会議に同席。意思決定の速度を半分に。</div></div></div></div><div class="reveal"><div style="display:grid;grid-template-columns:100px 1fr 360px;gap:36px;align-items:start;padding:44px 0;border-top:1px solid var(--line)"><div class="num" style="font-size:64px;font-family:var(--mono);font-weight:500;color:var(--ink);letter-spacing:-0.04em;line-height:1">03</div><div><div class="eyebrow" style="margin-bottom:12px">BEYOND HIRING</div><h3 class="display" style="font-size:28px;margin:0;font-family:var(--display);font-weight:700">中小企業の経営課題まで横展開</h3><p style="font-size:14.5px;line-height:1.95;color:var(--ink-2);margin-top:14px;max-width:580px;white-space:pre-line">採用に留まらず、電力コスト削減（DIGITAL GRID社パートナー）など、
+中小企業の利益を直接守る隣接領域までカバー。事業の地力ごと底上げします。</p></div><div style="border-left:1px solid var(--line);padding-left:24px;align-self:center"><div class="eyebrow" style="margin-bottom:8px">Case Note</div><div class="serif" style="font-size:15px;line-height:1.8;color:var(--ink)">電力契約見直しで、年間 ¥240万 のコスト削減。</div></div></div></div><div style="border-bottom:1px solid var(--ink)"></div></div><div class="reveal"><div style="margin-top:80px;padding:44px 48px;background:var(--ink);color:var(--shell);display:grid;grid-template-columns:180px 1fr;gap:44px;align-items:center;border-radius:6px"><div style="width:180px;height:220px;overflow:hidden;border-radius:4px;position:relative;box-shadow:0 18px 40px -20px rgba(0,0,0,.5)"><img src="assets/ceo.jpg" alt="代表取締役 内山 徹" style="width:100%;height:100%;object-fit:cover;object-position:50% 22%;filter:saturate(.95) contrast(1.02);display:block"/><div style="position:absolute;inset:0;background:linear-gradient(180deg, rgba(27,34,56,0) 55%, rgba(27,34,56,.35) 100%);pointer-events:none"></div></div><div><div class="eyebrow" style="color:rgba(255,255,255,.55)">Message from CEO</div><p class="serif" style="font-size:19px;line-height:1.85;margin-top:14px;font-weight:500;max-width:700px">「人が辞めない会社は、特別な会社ではありません。 採用と組織を、ひとつの循環として丁寧に設計しているだけです。 その設計を、私たちは静岡から始めます。」</p><div style="margin-top:20px;display:flex;align-items:center;gap:12px;font-family:var(--mono);font-size:12px;letter-spacing:.12em;color:rgba(255,255,255,.65)"><span style="width:36px;height:1px;background:rgba(255,255,255,.4)"></span>内山 徹 ／ TORU UCHIYAMA ／ FOUNDER &amp; CEO</div></div></div></div></div></section><section id="sec-3"><div class="wrap"><div style="display:flex;align-items:center;gap:14px;margin-bottom:28px"><span class="num" style="font-size:11px;color:var(--muted);letter-spacing:.1em">/ 04</span><span class="brand-tick" style="height:14px;background:var(--ink);opacity:0.35"></span><span class="eyebrow">The Flow</span><span class="label-jp" style="margin-left:4px">ご支援の流れ</span></div><div style="display:grid;grid-template-columns:1.05fr 1.95fr;gap:72px"><div class="reveal"><h2 class="display" style="font-size:clamp(36px, 4.2vw, 56px);margin:0;font-family:var(--serif);font-weight:700">4ステップで、<br/>再び <span style="color:var(--accent)">循環</span>を<br/>立ち上げる。</h2><p style="margin-top:28px;font-size:14.5px;line-height:2;color:var(--ink-2)">納品して終わり、ではなく、 4つ目のステップが <strong>1つ目に戻る</strong> ように設計しています。 採用は一度きりの工事ではなく、続いていく循環だからです。</p></div><div class="reveal"><div style="position:relative;padding-left:36px"><div style="position:absolute;left:8px;top:8px;bottom:60px;width:1px;background:var(--line-2)"></div><div style="position:relative;padding:0 0 36px"><span style="position:absolute;left:-34px;top:4px;width:17px;height:17px;border-radius:50%;background:var(--bg);border:1.5px solid var(--ink);display:flex;align-items:center;justify-content:center"><span style="width:6px;height:6px;background:var(--accent);border-radius:50%"></span></span><div style="display:grid;grid-template-columns:auto 1fr;gap:24px;align-items:baseline"><div class="num" style="font-size:12px;color:var(--muted)">STEP / 01</div><div class="display" style="font-size:24px;font-weight:700;font-family:var(--display)">ヒアリング</div></div><div style="display:grid;grid-template-columns:repeat(3, 1fr);gap:28px;margin-top:14px;padding-top:14px;border-top:1px dashed var(--line)"><div><div class="eyebrow" style="font-size:10px">所要期間</div><div style="font-size:13px;color:var(--ink);margin-top:4px;font-weight:500">1〜2 週間</div></div><div><div class="eyebrow" style="font-size:10px">関わる人</div><div style="font-size:13px;color:var(--ink);margin-top:4px;font-weight:500">経営 / 人事</div></div><div><div class="eyebrow" style="font-size:10px">成果物</div><div style="font-size:13px;color:var(--ink);margin-top:4px;font-weight:500">現状診断レポート</div></div></div></div><div style="position:relative;padding:0 0 36px"><span style="position:absolute;left:-34px;top:4px;width:17px;height:17px;border-radius:50%;background:var(--bg);border:1.5px solid var(--ink);display:flex;align-items:center;justify-content:center"><span style="width:6px;height:6px;background:var(--accent);border-radius:50%"></span></span><div style="display:grid;grid-template-columns:auto 1fr;gap:24px;align-items:baseline"><div class="num" style="font-size:12px;color:var(--muted)">STEP / 02</div><div class="display" style="font-size:24px;font-weight:700;font-family:var(--display)">採用戦略の設計</div></div><div style="display:grid;grid-template-columns:repeat(3, 1fr);gap:28px;margin-top:14px;padding-top:14px;border-top:1px dashed var(--line)"><div><div class="eyebrow" style="font-size:10px">所要期間</div><div style="font-size:13px;color:var(--ink);margin-top:4px;font-weight:500">2〜3 週間</div></div><div><div class="eyebrow" style="font-size:10px">関わる人</div><div style="font-size:13px;color:var(--ink);margin-top:4px;font-weight:500">経営 + CE 戦略</div></div><div><div class="eyebrow" style="font-size:10px">成果物</div><div style="font-size:13px;color:var(--ink);margin-top:4px;font-weight:500">採用戦略書 / ペルソナ</div></div></div></div><div style="position:relative;padding:0 0 36px"><span style="position:absolute;left:-34px;top:4px;width:17px;height:17px;border-radius:50%;background:var(--bg);border:1.5px solid var(--ink);display:flex;align-items:center;justify-content:center"><span style="width:6px;height:6px;background:var(--accent);border-radius:50%"></span></span><div style="display:grid;grid-template-columns:auto 1fr;gap:24px;align-items:baseline"><div class="num" style="font-size:12px;color:var(--muted)">STEP / 03</div><div class="display" style="font-size:24px;font-weight:700;font-family:var(--display)">Web・LINE・LP の実装</div></div><div style="display:grid;grid-template-columns:repeat(3, 1fr);gap:28px;margin-top:14px;padding-top:14px;border-top:1px dashed var(--line)"><div><div class="eyebrow" style="font-size:10px">所要期間</div><div style="font-size:13px;color:var(--ink);margin-top:4px;font-weight:500">4〜6 週間</div></div><div><div class="eyebrow" style="font-size:10px">関わる人</div><div style="font-size:13px;color:var(--ink);margin-top:4px;font-weight:500">CE 制作 + クライアント</div></div><div><div class="eyebrow" style="font-size:10px">成果物</div><div style="font-size:13px;color:var(--ink);margin-top:4px;font-weight:500">公開済みサイト / 運用フロー</div></div></div></div><div style="position:relative;padding:0 0 36px"><span style="position:absolute;left:-34px;top:4px;width:17px;height:17px;border-radius:50%;background:var(--bg);border:1.5px solid var(--ink);display:flex;align-items:center;justify-content:center"><span style="width:6px;height:6px;background:var(--accent);border-radius:50%"></span></span><div style="display:grid;grid-template-columns:auto 1fr;gap:24px;align-items:baseline"><div class="num" style="font-size:12px;color:var(--muted)">STEP / 04</div><div class="display" style="font-size:24px;font-weight:700;font-family:var(--display)">運用 ＆ 定着支援</div></div><div style="display:grid;grid-template-columns:repeat(3, 1fr);gap:28px;margin-top:14px;padding-top:14px;border-top:1px dashed var(--line)"><div><div class="eyebrow" style="font-size:10px">所要期間</div><div style="font-size:13px;color:var(--ink);margin-top:4px;font-weight:500">継続</div></div><div><div class="eyebrow" style="font-size:10px">関わる人</div><div style="font-size:13px;color:var(--ink);margin-top:4px;font-weight:500">CE 伴走 + 現場</div></div><div><div class="eyebrow" style="font-size:10px">成果物</div><div style="font-size:13px;color:var(--ink);margin-top:4px;font-weight:500">月次レビュー / 1on1 設計</div></div></div></div><div style="position:relative;margin-left:-36px;padding-left:36px;padding-top:8px"><svg viewBox="0 0 600 80" width="100%" height="60" preserveAspectRatio="none" aria-hidden="true"><path d="M 8 16 L 8 60 Q 8 72, 20 72 L 580 72 Q 596 72, 596 56 L 596 8" fill="none" stroke="var(--accent)" stroke-width="1.5" stroke-dasharray="4 5"></path><path d="M 596 14 L 591 22 L 601 22 Z" fill="var(--accent)"></path></svg><div style="margin-top:4px;margin-left:12px;font-family:var(--mono);font-size:10.5px;letter-spacing:.2em;color:var(--accent)">↺ THE LOOP CONTINUES — その後も、伴走を続けます。</div></div></div></div></div></div></section><section class="snug" style="background:var(--paper)"><div class="wrap"><div style="display:flex;align-items:center;gap:14px;margin-bottom:28px"><span class="num" style="font-size:11px;color:var(--muted);letter-spacing:.1em">/ 05</span><span class="brand-tick" style="height:14px;background:var(--ink);opacity:0.35"></span><span class="eyebrow">Adjacent Services</span><span class="label-jp" style="margin-left:4px">その他のサービス</span></div><div style="display:grid;grid-template-columns:1fr 1fr;gap:60px;align-items:center"><div class="reveal"><div class="num" style="font-size:11px;color:var(--muted);letter-spacing:.22em">IN PARTNERSHIP WITH ／ DIGITAL GRID</div><h3 class="display" style="font-size:clamp(28px, 3.2vw, 42px);margin-top:14px;margin-bottom:18px;font-family:var(--serif);font-weight:700">採用の隣で、<br/><span style="color:var(--accent)">電力コスト</span>も削れます。</h3><p style="font-size:14.5px;line-height:2;color:var(--ink-2);max-width:540px">DIGITAL GRID社のパートナーとして、中小企業の電力契約の見直し・スイッチング支援を行っています。 平均で <strong class="num">年間 ¥120〜240万</strong> のコスト削減事例があります。 採用と並行して、利益を守る打ち手としてご相談ください。</p><a href="#" class="btn btn-ghost" style="margin-top:28px;padding:12px 18px;font-size:13px">電力コスト診断を依頼する<span class="arrow">→</span></a></div><div class="reveal"><div class="placeholder" style="aspect-ratio:4/3;border-radius:4px">DIGITAL GRID / DIAGRAM</div></div></div></div></section><section id="contact" style="padding-top:100px;padding-bottom:120px"><div class="wrap"><div class="reveal"><div style="display:grid;grid-template-columns:1.2fr 0.8fr;gap:60px;padding:60px 60px 56px;background:var(--bg-2);border:1px solid var(--line);position:relative;overflow:hidden"><svg viewBox="0 0 800 600" preserveAspectRatio="none" width="100%" height="100%" style="position:absolute;inset:0;opacity:0.12;pointer-events:none" aria-hidden="true"><ellipse cx="650" cy="300" rx="56" ry="40" fill="none" stroke="var(--ink)" stroke-width=".5"></ellipse><ellipse cx="650" cy="300" rx="112" ry="80" fill="none" stroke="var(--ink)" stroke-width=".5"></ellipse><ellipse cx="650" cy="300" rx="168" ry="120" fill="none" stroke="var(--ink)" stroke-width=".5"></ellipse><ellipse cx="650" cy="300" rx="224" ry="160" fill="none" stroke="var(--ink)" stroke-width=".5"></ellipse><ellipse cx="650" cy="300" rx="280" ry="200" fill="none" stroke="var(--ink)" stroke-width=".5"></ellipse><ellipse cx="650" cy="300" rx="336" ry="240" fill="none" stroke="var(--ink)" stroke-width=".5"></ellipse><ellipse cx="650" cy="300" rx="392" ry="280" fill="none" stroke="var(--ink)" stroke-width=".5"></ellipse></svg><div style="position:relative"><div class="eyebrow">Contact ／ お問い合わせ</div><h2 class="display" style="font-size:clamp(38px, 4.6vw, 64px);margin:18px 0 0;font-family:var(--serif);font-weight:700;letter-spacing:-0.005em">次の循環を、<br/>ここから始めましょう。</h2><p style="font-size:14.5px;line-height:2;color:var(--ink-2);margin-top:24px;max-width:480px">初回のオンライン相談は無料です。 採用に困っている、定着に困っている、まずは話だけ ― どんな入口でも構いません。 静岡・愛知エリアの企業様は対面でも伺います。</p></div><div style="position:relative"><div style="display:flex;flex-direction:column;gap:12px"><a href="mailto:info@chickenandegg.co.jp" class="btn btn-accent" style="width:100%;justify-content:space-between">無料相談を申し込む<span class="arrow">→</span></a><a href="#" class="btn" style="width:100%;justify-content:space-between">3分でわかる会社案内 (PDF)<span class="arrow">↓</span></a><a href="#" class="btn btn-ghost" style="width:100%;justify-content:space-between">LINE 公式アカウントで質問する<span class="arrow">→</span></a></div><div style="margin-top:28px;padding-top:20px;border-top:1px solid var(--line);display:grid;grid-template-columns:1fr 1fr;gap:12px;font-size:12px;color:var(--muted)"><div><div class="eyebrow" style="font-size:10px">受付時間</div><div class="num" style="margin-top:4px;color:var(--ink)">平日 9:00 — 18:00</div></div><div><div class="eyebrow" style="font-size:10px">返信目安</div><div class="num" style="margin-top:4px;color:var(--ink)">1営業日以内</div></div></div></div></div></div></div></section><footer style="background:var(--ink);color:var(--shell);padding:80px 0 36px"><div class="wrap"><div class="display" style="font-size:clamp(80px, 14vw, 220px);line-height:0.85;font-family:var(--display);font-weight:900;color:var(--shell);letter-spacing:-0.02em;padding-bottom:36px;border-bottom:1px solid rgba(255,255,255,.16);display:flex;align-items:baseline;gap:0.08em;flex-wrap:wrap"><span>Chicken</span><span style="color:var(--accent)">&amp;</span><span>Egg</span></div><div style="padding-top:48px;display:grid;grid-template-columns:1.4fr 1fr 1fr 1fr;gap:36px"><div><span style="display:inline-flex;align-items:center;gap:11px;color:var(--shell)"><img src="assets/logo-mark-rev.png" alt="Chicken and Egg" width="30" height="39.900000000000006" style="display:block;object-fit:contain"/><span style="font-family:var(--display);font-weight:700;font-size:16px;letter-spacing:0.04em">Chicken<span style="color:var(--accent);margin:0 3px">&amp;</span>Egg</span></span><address style="font-style:normal;margin-top:18px;font-size:13px;line-height:1.95;color:rgba(255,255,255,.65)">株式会社チキンアンドエッグ<br/>CHICKEN AND EGG INC.<br/>静岡県磐田市二之宮 478-103<br/><span class="num">Est. 2025 · Founder: Toru Uchiyama</span></address><div style="display:flex;gap:10px;margin-top:22px"><a href="#" style="width:36px;height:36px;border:1px solid rgba(255,255,255,.25);border-radius:999px;display:inline-flex;align-items:center;justify-content:center;font-family:var(--mono);font-size:10px;letter-spacing:.1em;color:rgba(255,255,255,.8)">LINE</a><a href="#" style="width:36px;height:36px;border:1px solid rgba(255,255,255,.25);border-radius:999px;display:inline-flex;align-items:center;justify-content:center;font-family:var(--mono);font-size:10px;letter-spacing:.1em;color:rgba(255,255,255,.8)">X</a><a href="#" style="width:36px;height:36px;border:1px solid rgba(255,255,255,.25);border-radius:999px;display:inline-flex;align-items:center;justify-content:center;font-family:var(--mono);font-size:10px;letter-spacing:.1em;color:rgba(255,255,255,.8)">note</a><a href="#" style="width:36px;height:36px;border:1px solid rgba(255,255,255,.25);border-radius:999px;display:inline-flex;align-items:center;justify-content:center;font-family:var(--mono);font-size:10px;letter-spacing:.1em;color:rgba(255,255,255,.8)">YT</a></div></div><div><div class="eyebrow" style="color:rgba(255,255,255,.55);margin-bottom:14px">Services</div><ul style="list-style:none;padding:0;margin:0;display:flex;flex-direction:column;gap:10px"><li><a href="#" style="font-size:13px;color:rgba(255,255,255,.78)">TAMAGO（採用）</a></li><li><a href="#" style="font-size:13px;color:rgba(255,255,255,.78)">NIWATORI（人事）</a></li><li><a href="#" style="font-size:13px;color:rgba(255,255,255,.78)">DIGITAL GRID（電力）</a></li><li><a href="#" style="font-size:13px;color:rgba(255,255,255,.78)">料金</a></li></ul></div><div><div class="eyebrow" style="color:rgba(255,255,255,.55);margin-bottom:14px">Company</div><ul style="list-style:none;padding:0;margin:0;display:flex;flex-direction:column;gap:10px"><li><a href="#" style="font-size:13px;color:rgba(255,255,255,.78)">会社概要</a></li><li><a href="#" style="font-size:13px;color:rgba(255,255,255,.78)">代表メッセージ</a></li><li><a href="#" style="font-size:13px;color:rgba(255,255,255,.78)">ミッション</a></li><li><a href="#" style="font-size:13px;color:rgba(255,255,255,.78)">採用情報</a></li></ul></div><div><div class="eyebrow" style="color:rgba(255,255,255,.55);margin-bottom:14px">Resources</div><ul style="list-style:none;padding:0;margin:0;display:flex;flex-direction:column;gap:10px"><li><a href="#" style="font-size:13px;color:rgba(255,255,255,.78)">お役立ちコラム</a></li><li><a href="#" style="font-size:13px;color:rgba(255,255,255,.78)">資料ダウンロード</a></li><li><a href="#" style="font-size:13px;color:rgba(255,255,255,.78)">事例</a></li><li><a href="privacy.html" style="font-size:13px;color:rgba(255,255,255,.78)">プライバシー</a></li></ul></div></div><div style="margin-top:64px;padding-top:22px;border-top:1px solid rgba(255,255,255,.16);display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:12px;font-family:var(--mono);font-size:11px;letter-spacing:.14em;color:rgba(255,255,255,.55)"><span>© 2026 CHICKEN AND EGG INC. ALL RIGHTS RESERVED.</span><span>採れて、育って、また誰かを呼ぶ。 ／ LOOP.</span></div></div></footer>
 <script>
-// Header scroll effect
-const header = document.getElementById('header');
-let lastScroll = 0;
-window.addEventListener('scroll', () => {
-  const currentScroll = window.scrollY;
-  if (currentScroll > 60) {
-    header.classList.add('scrolled');
-  } else {
-    header.classList.remove('scrolled');
-  }
-  lastScroll = currentScroll;
-});
 
-// Mobile menu
-const hamburger = document.getElementById('hamburger');
-const mobileNav = document.getElementById('mobileNav');
-hamburger.addEventListener('click', () => {
-  hamburger.classList.toggle('active');
-  mobileNav.classList.toggle('active');
-  document.body.style.overflow = mobileNav.classList.contains('active') ? 'hidden' : '';
-});
-document.querySelectorAll('.mobile-link').forEach(link => {
-  link.addEventListener('click', () => {
-    hamburger.classList.remove('active');
-    mobileNav.classList.remove('active');
-    document.body.style.overflow = '';
-  });
-});
+(function(){
+  // reveal on scroll
+  var io = new IntersectionObserver(function(entries){
+    entries.forEach(function(e){
+      if(e.isIntersecting){ e.target.classList.add('in'); io.unobserve(e.target); }
+    });
+  }, { threshold: 0.12, rootMargin: '0px 0px -40px 0px' });
+  document.querySelectorAll('.reveal').forEach(function(el){ io.observe(el); });
+  // header scroll state
+  var hdr = document.querySelector('header');
+  function onScroll(){ hdr.classList.toggle('hdr-scrolled', window.scrollY > 24); }
+  window.addEventListener('scroll', onScroll, { passive: true });
+  onScroll();
+})();
 
-// Intersection Observer for fade-up animations
-const observerOptions = { threshold: 0.15, rootMargin: '0px 0px -40px 0px' };
-const observer = new IntersectionObserver((entries) => {
-  entries.forEach(entry => {
-    if (entry.isIntersecting) {
-      entry.target.classList.add('visible');
-    }
-  });
-}, observerOptions);
-
-document.querySelectorAll('.fade-up, .stagger').forEach(el => observer.observe(el));
-
-// Smooth scroll for anchor links
-document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-  anchor.addEventListener('click', function(e) {
-    e.preventDefault();
-    const target = document.querySelector(this.getAttribute('href'));
-    if (target) {
-      const headerHeight = header.offsetHeight;
-      const targetPosition = target.getBoundingClientRect().top + window.scrollY - headerHeight;
-      window.scrollTo({ top: targetPosition, behavior: 'smooth' });
-    }
-  });
-});
 </script>
 </body>
 </html>
