@@ -1,0 +1,643 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>法人向け電気料金削減｜株式会社チキンアンドエッグ【デジタルグリッドプラットフォーム販売パートナー】</title>
+<meta name="description" content="法人の電気料金削減と脱炭素を同時に実現。デジタルグリッドプラットフォーム（DGP）の販売パートナーとして、高圧・特別高圧の電力調達を最適化。削減シミュレーションは無料。静岡・愛知の株式会社チキンアンドエッグ。">
+<meta name="keywords" content="電気料金削減,法人,高圧,特別高圧,電力調達,デジタルグリッド,DGP,ハイブリッドプラン,脱炭素,中小企業,静岡,愛知">
+<meta property="og:title" content="法人向け電気料金削減｜株式会社チキンアンドエッグ">
+<meta property="og:description" content="電気料金の削減と脱炭素を、同時に。診断は無料、まずは検針票をお送りください。">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://chickenandegg.co.jp/energy">
+<link rel="canonical" href="https://chickenandegg.co.jp/energy">
+<link rel="icon" type="image/png" href="assets/logo-mark.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Noto+Sans+JP:wght@400;500;700;900&family=Shippori+Mincho:wght@500;600;700;800&family=Zen+Kaku+Gothic+New:wght@400;500;700;900&display=swap" rel="stylesheet">
+<style>
+
+  :root {
+    --bg: #F6F1E8;
+    --bg-2: #EFE7D6;
+    --paper: #FBF8F1;
+    --ink: #1B2238;
+    --ink-2: #2E3550;
+    --muted: #6B6657;
+    --line: rgba(27,34,56,.10);
+    --line-2: rgba(27,34,56,.18);
+    --accent: #E2592A;
+    --accent-soft: #F2C24A;
+    --shell: #FAF7F0;
+
+    --serif: "Shippori Mincho", "游明朝", "Yu Mincho", serif;
+    --display: "Zen Kaku Gothic New", "游ゴシック", "Yu Gothic", sans-serif;
+    --body: "Noto Sans JP", "Hiragino Kaku Gothic ProN", sans-serif;
+    --mono: "Inter", ui-sans-serif, system-ui;
+
+    --r: 6px;
+    --maxw: 1240px;
+    --pad: clamp(20px, 4vw, 56px);
+  }
+
+  /* dark/navy palette toggle */
+  body[data-mode="cool"] {
+    --bg: #EDE7DA;
+    --accent: #D85428;
+  }
+  body[data-mode="mono"] {
+    --bg: #F4F1EB;
+    --accent: #1B2238;
+    --accent-soft: #C9C2B0;
+  }
+
+  * { box-sizing: border-box; }
+  html, body { margin: 0; padding: 0; }
+  body {
+    background: var(--bg);
+    color: var(--ink);
+    font-family: var(--body);
+    font-weight: 400;
+    line-height: 1.7;
+    font-feature-settings: "palt";
+    -webkit-font-smoothing: antialiased;
+    overflow-x: hidden;
+  }
+
+  ::selection { background: var(--accent); color: #fff; }
+
+  /* canonical typography */
+  .display {
+    font-family: var(--display);
+    font-weight: 900;
+    letter-spacing: -0.01em;
+    line-height: 1.05;
+  }
+  .eyebrow {
+    font-family: var(--mono);
+    font-size: 11px;
+    letter-spacing: 0.22em;
+    text-transform: uppercase;
+    color: var(--muted);
+    font-weight: 500;
+  }
+  .label-jp {
+    font-family: var(--display);
+    font-weight: 500;
+    font-size: 12px;
+    letter-spacing: 0.18em;
+    color: var(--muted);
+  }
+  .num {
+    font-family: var(--mono);
+    font-feature-settings: "tnum", "lnum";
+    font-weight: 500;
+  }
+  .serif {
+    font-family: var(--serif);
+  }
+
+  /* container */
+  .wrap { max-width: var(--maxw); margin: 0 auto; padding: 0 var(--pad); }
+  .wrap-narrow { max-width: 980px; margin: 0 auto; padding: 0 var(--pad); }
+
+  /* divider rule */
+  .rule { height: 1px; background: var(--line); border: 0; margin: 0; }
+
+  /* utility */
+  a { color: inherit; text-decoration: none; }
+  button { font-family: inherit; cursor: pointer; }
+
+  /* CTA buttons */
+  .btn {
+    display: inline-flex; align-items: center; gap: 10px;
+    padding: 14px 22px; border-radius: 999px;
+    font-family: var(--body); font-weight: 500; font-size: 14px;
+    border: 1px solid var(--ink);
+    background: var(--ink); color: var(--shell);
+    transition: transform .2s ease, box-shadow .25s ease, background .2s;
+  }
+  .btn:hover { transform: translateY(-1px); box-shadow: 0 14px 30px -16px rgba(27,34,56,.55); }
+  .btn-accent { background: var(--accent); border-color: var(--accent); color: #fff; }
+  .btn-ghost {
+    background: transparent; color: var(--ink); border: 1px solid var(--line-2);
+  }
+  .btn-ghost:hover { background: rgba(27,34,56,.04); }
+  .btn .arrow {
+    width: 20px; height: 20px; border-radius: 999px;
+    background: rgba(255,255,255,.18); display: inline-flex; align-items: center; justify-content: center;
+    font-size: 11px;
+  }
+  .btn-ghost .arrow { background: rgba(27,34,56,.08); color: var(--ink); }
+
+  /* section spacing */
+  section { padding: clamp(80px, 9vw, 140px) 0; position: relative; }
+  section.snug { padding: clamp(60px, 7vw, 110px) 0; }
+
+  /* fade-in observer */
+  .reveal { opacity: 0; transform: translateY(18px); transition: opacity .9s ease, transform .9s ease; }
+  .reveal.in { opacity: 1; transform: none; }
+
+  /* hairline accent line that runs vertically as a brand anchor */
+  .brand-tick {
+    width: 1px; height: 36px; background: var(--ink); display: inline-block;
+  }
+
+  /* dotted/striped placeholder */
+  .placeholder {
+    background:
+      repeating-linear-gradient(45deg, rgba(27,34,56,.06) 0 1px, transparent 1px 8px),
+      var(--paper);
+    border: 1px solid var(--line);
+    display: flex; align-items: center; justify-content: center;
+    color: var(--muted); font-family: var(--mono); font-size: 11px;
+    letter-spacing: 0.18em; text-transform: uppercase;
+  }
+
+  html { scroll-behavior: smooth; }
+  /* header scrolled state (vanilla JS toggles .hdr-scrolled) */
+  header.hdr-scrolled {
+    background: rgba(246,241,232,.85) !important;
+    -webkit-backdrop-filter: blur(10px) saturate(150%) !important;
+    backdrop-filter: blur(10px) saturate(150%) !important;
+    border-bottom: 1px solid var(--line) !important;
+  }
+  header.hdr-scrolled > .wrap { padding: 14px 0 !important; }
+  /* mobile niceties */
+  @media (max-width: 760px) {
+    header nav { display: none !important; }
+    header .btn { padding: 9px 14px !important; font-size: 12px !important; white-space: nowrap; }
+  }
+  @media (max-width: 480px) {
+    #top h1 { font-size: 37px !important; letter-spacing: -0.02em; }
+  }
+  /* responsive grid collapse (inline styles overridden) */
+  @media (max-width: 860px) {
+    [style*="grid-template-columns"] { grid-template-columns: 1fr !important; }
+    [style*="grid-template-columns:auto 1fr"] { grid-template-columns: auto 1fr !important; }
+    [style*="grid-template-columns:1fr 1fr;gap:12px"] { grid-template-columns: 1fr 1fr !important; }
+    section { padding: 64px 0; }
+  }
+
+
+
+  /* comparison table */
+  .cmp { width:100%; border-collapse:collapse; font-size:13.5px; }
+  .cmp th, .cmp td { padding:16px 18px; border-bottom:1px solid var(--line); text-align:left; vertical-align:top; line-height:1.7; }
+  .cmp thead th { font-family:var(--display); font-weight:700; font-size:14px; border-bottom:1px solid var(--ink); }
+  .cmp .dgp { background:rgba(226,89,42,.06); }
+  .cmp thead th.dgp { color:var(--accent); }
+  .cmp td:first-child { font-weight:700; font-family:var(--display); color:var(--ink); white-space:nowrap; }
+  .cmp td { color:var(--ink-2); }
+  @media (max-width: 860px) {
+    .cmp-scroll { overflow-x:auto; -webkit-overflow-scrolling:touch; }
+    .cmp { min-width:640px; }
+  }
+</style>
+</head>
+<body>
+
+<header style="position:sticky;top:0;z-index:50;background:transparent;backdrop-filter:none;-webkit-backdrop-filter:none;border-bottom:1px solid transparent;transition:all .35s ease">
+  <div class="wrap" style="display:flex;align-items:center;justify-content:space-between;padding:22px 0;transition:padding .35s">
+    <a href="/" aria-label="Chicken and Egg"><span style="display:inline-flex;align-items:center;gap:11px;color:currentColor"><img src="assets/logo-mark.png" alt="Chicken and Egg" width="30" height="40" style="display:block;object-fit:contain"/><span style="font-family:var(--display);font-weight:700;font-size:16px;letter-spacing:0.04em">Chicken<span style="color:var(--accent);margin:0 3px">&amp;</span>Egg</span></span></a>
+    <nav style="display:flex;gap:28px">
+      <a href="#dgp" style="font-size:13px;color:var(--ink-2);font-weight:500;position:relative">仕組み<span class="nav-underline" style="position:absolute;left:0;right:0;bottom:-4px;height:1px;background:var(--accent);transform:scaleX(0);transform-origin:left;transition:transform .3s"></span></a>
+      <a href="#results" style="font-size:13px;color:var(--ink-2);font-weight:500;position:relative">削減実績<span class="nav-underline" style="position:absolute;left:0;right:0;bottom:-4px;height:1px;background:var(--accent);transform:scaleX(0);transform-origin:left;transition:transform .3s"></span></a>
+      <a href="#flow" style="font-size:13px;color:var(--ink-2);font-weight:500;position:relative">導入の流れ<span class="nav-underline" style="position:absolute;left:0;right:0;bottom:-4px;height:1px;background:var(--accent);transform:scaleX(0);transform-origin:left;transition:transform .3s"></span></a>
+      <a href="#faq" style="font-size:13px;color:var(--ink-2);font-weight:500;position:relative">よくある質問<span class="nav-underline" style="position:absolute;left:0;right:0;bottom:-4px;height:1px;background:var(--accent);transform:scaleX(0);transform-origin:left;transition:transform .3s"></span></a>
+    </nav>
+    <div style="display:flex;gap:10px;align-items:center">
+      <a href="/" class="btn btn-ghost" style="padding:10px 16px;font-size:13px">トップへ<span class="arrow">←</span></a>
+      <a href="https://lin.ee/QEVJczT" target="_blank" rel="noopener" class="btn btn-accent" style="padding:10px 16px;font-size:13px">無料診断<span class="arrow">→</span></a>
+    </div>
+  </div>
+  <style>header nav a:hover .nav-underline { transform: scaleX(1); }</style>
+</header>
+
+<!-- HERO -->
+<section id="top" style="padding-top:40px;padding-bottom:0;overflow:hidden">
+  <div class="wrap" style="position:relative">
+    <div style="display:flex;justify-content:space-between;align-items:center;padding:8px 0 56px;border-bottom:1px solid var(--line);margin-bottom:64px">
+      <span class="eyebrow">Energy — Digital Grid Platform Sales Partner</span>
+      <span class="num" style="font-size:11px;color:var(--muted);letter-spacing:.18em">FOR CORPORATE ／ 法人向け電力調達</span>
+    </div>
+    <div style="display:grid;grid-template-columns:1.05fr 0.95fr;gap:60px;align-items:center">
+      <div class="reveal">
+        <div class="label-jp" style="margin-bottom:22px">法人の電気料金削減 × 脱炭素を、同時に</div>
+        <h1 class="display" style="font-size:clamp(36px, 4.2vw, 60px);margin:0;font-family:var(--serif);font-weight:700;letter-spacing:-0.005em">利益は、増やす前に<br/><span style="color:var(--accent)">漏らさない</span>。</h1>
+        <p style="font-family:var(--display);font-weight:500;font-size:17px;margin-top:28px;color:var(--ink-2);letter-spacing:.02em;line-height:1.9;max-width:560px">電気を「決められたプランから選ぶ」時代は終わりました。<br/>チキンアンドエッグは、発電事業者と直接つながる電力プラットフォーム<strong style="font-weight:700">「デジタルグリッドプラットフォーム（DGP）」の販売パートナー</strong>として、貴社の電力調達を最適化します。</p>
+        <div style="display:flex;gap:14px;margin-top:44px;flex-wrap:wrap">
+          <a href="https://lin.ee/QEVJczT" target="_blank" rel="noopener" class="btn btn-accent">削減額を無料で診断する<span class="arrow">→</span></a>
+          <a href="#dgp" class="btn btn-ghost">削減の仕組みを見る<span class="arrow">↓</span></a>
+        </div>
+        <div style="margin-top:56px;padding-top:28px;border-top:1px solid var(--line);display:grid;grid-template-columns:repeat(3, 1fr);gap:24px">
+          <div>
+            <div class="eyebrow" style="font-size:10px">削減事例</div>
+            <div class="num" style="font-family:var(--mono);font-weight:700;font-size:22px;margin-top:6px;letter-spacing:-0.01em">最大 28.6%</div>
+            <div style="font-size:11px;color:var(--muted);margin-top:2px">物流倉庫の事例 ※シミュレーション値</div>
+          </div>
+          <div>
+            <div class="eyebrow" style="font-size:10px">診断・シミュレーション</div>
+            <div class="num" style="font-family:var(--mono);font-weight:700;font-size:22px;margin-top:6px;letter-spacing:-0.01em">¥0</div>
+            <div style="font-size:11px;color:var(--muted);margin-top:2px">無料・切替の義務なし</div>
+          </div>
+          <div>
+            <div class="eyebrow" style="font-size:10px">対象</div>
+            <div style="font-family:var(--display);font-weight:700;font-size:22px;margin-top:6px;letter-spacing:-0.01em">法人</div>
+            <div style="font-size:11px;color:var(--muted);margin-top:2px">高圧・特別高圧（全国9エリア対応）</div>
+          </div>
+        </div>
+      </div>
+      <div class="reveal" style="position:relative">
+        <svg viewBox="0 0 560 560" width="100%" style="max-width:520px;margin-left:auto;display:block" aria-hidden="true">
+          <defs>
+            <radialGradient id="eGlow" cx="50%" cy="45%" r="55%">
+              <stop offset="0%" stop-color="var(--accent)" stop-opacity=".08"></stop>
+              <stop offset="60%" stop-color="var(--accent)" stop-opacity="0"></stop>
+            </radialGradient>
+          </defs>
+          <rect x="0" y="0" width="560" height="560" fill="url(#eGlow)"></rect>
+          <g opacity=".4">
+            <line x1="70" y1="120" x2="70" y2="440" stroke="var(--line-2)"></line>
+            <line x1="70" y1="440" x2="500" y2="440" stroke="var(--line-2)"></line>
+          </g>
+          <text x="70" y="104" style="font-family:var(--mono);font-size:10px;letter-spacing:.2em" fill="var(--muted)">電気料金 / COST</text>
+          <text x="500" y="464" text-anchor="end" style="font-family:var(--mono);font-size:10px;letter-spacing:.2em" fill="var(--muted)">時間 / TIME</text>
+          <path d="M 90 180 L 250 180" stroke="var(--muted)" stroke-width="1.5" stroke-dasharray="2 5"></path>
+          <text x="96" y="168" style="font-family:var(--mono);font-size:9.5px;letter-spacing:.16em" fill="var(--muted)">見直し前</text>
+          <path d="M 90 180 L 250 180 L 250 300 L 480 300" fill="none" stroke="var(--ink)" stroke-width="1.8"></path>
+          <circle cx="250" cy="180" r="5" fill="var(--accent)"></circle>
+          <text x="262" y="176" style="font-family:var(--mono);font-size:9.5px;letter-spacing:.16em" fill="var(--accent)">SWITCH ↓</text>
+          <path d="M 400 180 L 400 300" stroke="var(--accent)" stroke-width="1.2" stroke-dasharray="3 4"></path>
+          <path d="M 396 188 L 400 180 L 404 188 Z" fill="var(--accent)"></path>
+          <path d="M 396 292 L 400 300 L 404 292 Z" fill="var(--accent)"></path>
+          <text x="412" y="245" style="font-family:var(--mono);font-size:10.5px;letter-spacing:.14em" fill="var(--accent)">▲ 削減分</text>
+          <text x="412" y="262" style="font-family:var(--mono);font-size:9px;letter-spacing:.14em" fill="var(--muted)">＝ そのまま利益に</text>
+          <circle r="3.5" fill="var(--accent)">
+            <animateMotion dur="6s" repeatCount="indefinite" path="M 90 180 L 250 180 L 250 300 L 480 300"></animateMotion>
+          </circle>
+          <text x="285" y="330" style="font-family:var(--mono);font-size:9.5px;letter-spacing:.16em" fill="var(--muted)">品質・供給はそのまま</text>
+        </svg>
+        <div style="position:absolute;right:0;bottom:-8px;font-family:var(--mono);font-size:10px;letter-spacing:.2em;color:var(--muted);text-transform:uppercase">COST DOWN, SAME POWER.</div>
+      </div>
+    </div>
+    <div style="margin-top:80px"></div>
+  </div>
+</section>
+
+<!-- 01 DGPとは -->
+<section id="dgp" style="background:var(--paper)">
+  <div class="wrap">
+    <div style="display:flex;align-items:center;gap:14px;margin-bottom:28px">
+      <span class="num" style="font-size:11px;color:var(--muted);letter-spacing:.1em">/ 01</span>
+      <span class="brand-tick" style="height:14px;background:var(--ink);opacity:0.35"></span>
+      <span class="eyebrow">What is DGP</span>
+      <span class="label-jp" style="margin-left:4px">デジタルグリッドプラットフォームとは</span>
+    </div>
+    <div style="display:grid;grid-template-columns:1.1fr 0.9fr;gap:72px;align-items:start">
+      <div class="reveal">
+        <h2 class="display" style="font-size:clamp(30px, 3.5vw, 48px);margin:0;font-family:var(--serif);font-weight:700">電気は、<br/>「選ばされる」から<br/><span style="color:var(--accent)">「選ぶ」</span>へ。</h2>
+        <p style="margin-top:32px;font-size:15px;line-height:1.95;color:var(--ink-2);max-width:560px">デジタルグリッドプラットフォーム（DGP）は、発電事業者と企業が電力や環境価値を<strong style="color:var(--ink)">直接取引</strong>できる、デジタルグリッド社運営の電力プラットフォームです。<br/><br/>従来の電力契約が「電力会社の決めたプランを選ぶ」ものだったのに対し、DGPは<strong style="color:var(--ink)">組み合わせ自由・電源選択可能・価格明示</strong>。電源の組み合わせや再エネ比率を貴社に合わせて設計し、価格・脱炭素の両面から電力調達を最適化します。<br/><br/>全国<strong class="num" style="color:var(--ink)">6,000超</strong>の発電・需要拠点をつなぎ（2026年4月末時点）、髙島屋・東急不動産・横河電機をはじめとする企業に導入されています。</p>
+      </div>
+      <div class="reveal">
+        <div style="display:flex;flex-direction:column;gap:0">
+          <div style="padding:26px 0;border-top:1px solid var(--ink)">
+            <div class="eyebrow" style="margin-bottom:10px">DGP 01</div>
+            <h3 class="display" style="font-size:19px;margin:0;font-family:var(--display);font-weight:700">組み合わせ自由</h3>
+            <p style="font-size:14px;line-height:1.9;color:var(--ink-2);margin-top:8px">固定価格・市場連動・再エネなど、電源と価格タイプを自由に組み合わせて調達を設計できます。</p>
+          </div>
+          <div style="padding:26px 0;border-top:1px solid var(--line)">
+            <div class="eyebrow" style="margin-bottom:10px">DGP 02</div>
+            <h3 class="display" style="font-size:19px;margin:0;font-family:var(--display);font-weight:700">電源を選べる</h3>
+            <p style="font-size:14px;line-height:1.9;color:var(--ink-2);margin-top:8px">発電事業者と直接契約。再エネ比率を高めたい企業は、REメニューやcPPAまで幅広く対応できます。</p>
+          </div>
+          <div style="padding:26px 0;border-top:1px solid var(--line);border-bottom:1px solid var(--ink)">
+            <div class="eyebrow" style="margin-bottom:10px">DGP 03</div>
+            <h3 class="display" style="font-size:19px;margin:0;font-family:var(--display);font-weight:700">価格が見える</h3>
+            <p style="font-size:14px;line-height:1.9;color:var(--ink-2);margin-top:8px">コスト構造を開示し、価格を明示。「なぜこの金額なのか」が分からない従来型の不透明さを解消します。</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ハイブリッドプラン -->
+    <div class="reveal">
+      <div style="margin-top:96px;display:grid;grid-template-columns:0.95fr 1.05fr;gap:60px;align-items:center;padding:48px 52px;background:var(--bg-2);border:1px solid var(--line);border-radius:6px;position:relative">
+        <div style="position:absolute;top:-12px;left:36px;padding:4px 10px;background:var(--ink);color:var(--shell);font-family:var(--mono);font-size:10px;letter-spacing:.2em">HYBRID PLAN</div>
+        <div>
+          <div class="eyebrow" style="margin-bottom:14px">安定と削減を、両立する</div>
+          <h3 class="display" style="font-size:clamp(24px, 2.6vw, 34px);margin:0;font-family:var(--serif);font-weight:700">約70%を固定で安定確保、<br/>約30%で市場の安さを享受。</h3>
+          <p style="font-size:14.5px;line-height:1.95;color:var(--ink-2);margin-top:18px">使用電力の約70%を固定価格で確保して価格高騰リスクを抑えながら、残り約30%は市場連動で調達し、市場価格の安さも取り込む ― それがDGPの<strong style="color:var(--ink)">ハイブリッドプラン</strong>です。比率は貴社の使用状況やリスク許容度に合わせて柔軟に調整でき、完全固定価格での調達も可能です。</p>
+        </div>
+        <div>
+          <svg viewBox="0 0 520 300" width="100%" aria-hidden="true">
+            <text x="10" y="24" style="font-family:var(--mono);font-size:10px;letter-spacing:.2em" fill="var(--muted)">使用電力の内訳 / HYBRID MIX</text>
+            <rect x="10" y="60" width="343" height="72" fill="var(--ink)" rx="3"></rect>
+            <rect x="361" y="60" width="147" height="72" fill="var(--accent)" rx="3"></rect>
+            <text x="30" y="92" style="font-family:var(--display);font-weight:700;font-size:17px" fill="var(--shell)">固定価格 約70%</text>
+            <text x="30" y="114" style="font-family:var(--mono);font-size:10px;letter-spacing:.12em" fill="rgba(255,255,255,.65)">価格高騰リスクを抑える土台</text>
+            <text x="374" y="92" style="font-family:var(--display);font-weight:700;font-size:15px" fill="#fff">市場連動</text>
+            <text x="374" y="112" style="font-family:var(--display);font-weight:700;font-size:15px" fill="#fff">約30%</text>
+            <path d="M 10 160 L 353 160" stroke="var(--ink)" stroke-width="1" stroke-dasharray="3 4" opacity=".5"></path>
+            <text x="10" y="182" style="font-family:var(--mono);font-size:10.5px;letter-spacing:.14em" fill="var(--ink-2)">→ コストの「安定」を確保</text>
+            <path d="M 361 160 L 508 160" stroke="var(--accent)" stroke-width="1" stroke-dasharray="3 4" opacity=".6"></path>
+            <text x="361" y="182" style="font-family:var(--mono);font-size:10.5px;letter-spacing:.14em" fill="var(--accent)">→ 市場の「安さ」を享受</text>
+            <text x="10" y="236" style="font-family:var(--display);font-weight:500;font-size:12.5px" fill="var(--muted)">※ 比率は柔軟に調整可能。完全固定価格によるリスク抑制も選べます。</text>
+            <text x="10" y="258" style="font-family:var(--display);font-weight:500;font-size:12.5px" fill="var(--muted)">※ 市場連動のみの契約で価格高騰に苦しむリスクを避ける設計です。</text>
+          </svg>
+        </div>
+      </div>
+    </div>
+
+    <!-- 比較表 -->
+    <div class="reveal">
+      <div style="margin-top:72px">
+        <div class="eyebrow" style="margin-bottom:18px">Comparison ／ 従来の電力契約との違い</div>
+        <div class="cmp-scroll">
+          <table class="cmp">
+            <thead>
+              <tr>
+                <th style="width:22%"></th>
+                <th class="dgp" style="width:30%">DGP（デジタルグリッド）</th>
+                <th style="width:24%">大手電力会社</th>
+                <th style="width:24%">新電力（PPS）</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr><td>電源の選択</td><td class="dgp">完全カスタマイズ</td><td>限定的</td><td>限定的</td></tr>
+              <tr><td>価格の透明性</td><td class="dgp">コスト構造を開示</td><td>不透明</td><td>不透明</td></tr>
+              <tr><td>価格変動リスク</td><td class="dgp">完全固定価格による抑制も可能</td><td>燃料価格の影響を受けやすい</td><td>燃料価格の影響を受けやすい</td></tr>
+              <tr><td>再エネ対応</td><td class="dgp">REメニュー＋cPPAまで幅広く対応</td><td>REメニュー中心</td><td>REメニュー中心</td></tr>
+              <tr><td>導入後サポート</td><td class="dgp">継続的な最適化支援</td><td>主に契約更新時のみ</td><td>主に契約更新時のみ</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 02 削減実績 -->
+<section id="results">
+  <div class="wrap">
+    <div style="display:flex;align-items:center;gap:14px;margin-bottom:28px">
+      <span class="num" style="font-size:11px;color:var(--muted);letter-spacing:.1em">/ 02</span>
+      <span class="brand-tick" style="height:14px;background:var(--ink);opacity:0.35"></span>
+      <span class="eyebrow">Results</span>
+      <span class="label-jp" style="margin-left:4px">削減シミュレーション事例</span>
+    </div>
+    <div style="display:grid;grid-template-columns:0.9fr 1.1fr;gap:60px;align-items:end;margin-bottom:56px">
+      <div class="reveal">
+        <h2 class="display" style="font-size:clamp(30px, 3.5vw, 48px);margin:0;font-family:var(--serif);font-weight:700">業種が変われば、<br/>削れる場所も<br/><span style="color:var(--accent)">変わる</span>。</h2>
+      </div>
+      <div class="reveal">
+        <p style="font-size:15px;line-height:2;color:var(--ink-2);margin:0">夜間に電気を使う病院、季節変動の大きいホテル、稼働が読める工場 ― 使い方が違えば、最適な調達も違います。DGPは時間帯別の使用分析から、貴社に合わせたプランを設計します。</p>
+      </div>
+    </div>
+    <div class="reveal">
+      <div style="display:grid;grid-template-columns:repeat(4, 1fr);gap:20px">
+        <div style="background:var(--ink);color:var(--shell);padding:30px 26px;border-radius:6px">
+          <div class="eyebrow" style="color:rgba(255,255,255,.5);font-size:10px">Case 01 ／ 総合病院</div>
+          <div class="num" style="font-size:44px;font-weight:700;color:var(--accent-soft);letter-spacing:-0.02em;margin-top:14px;line-height:1">23.1<span style="font-size:20px">%</span></div>
+          <div class="num" style="font-size:10px;letter-spacing:.2em;color:rgba(255,255,255,.55);margin-top:6px">COST DOWN</div>
+          <p style="font-size:12.5px;line-height:1.8;color:rgba(255,255,255,.75);margin:14px 0 0">夜間電力への対応とハイブリッドプランの採用で削減。</p>
+        </div>
+        <div style="background:var(--ink);color:var(--shell);padding:30px 26px;border-radius:6px">
+          <div class="eyebrow" style="color:rgba(255,255,255,.5);font-size:10px">Case 02 ／ リゾートホテル</div>
+          <div class="num" style="font-size:44px;font-weight:700;color:var(--accent-soft);letter-spacing:-0.02em;margin-top:14px;line-height:1">22.3<span style="font-size:20px">%</span></div>
+          <div class="num" style="font-size:10px;letter-spacing:.2em;color:rgba(255,255,255,.55);margin-top:6px">COST DOWN</div>
+          <p style="font-size:12.5px;line-height:1.8;color:rgba(255,255,255,.75);margin:14px 0 0">電力価格の高騰リスクに対応しながらコストを削減。</p>
+        </div>
+        <div style="background:var(--accent);color:#fff;padding:30px 26px;border-radius:6px;position:relative">
+          <div style="position:absolute;top:-10px;right:14px;padding:3px 10px;background:var(--ink);color:var(--shell);font-family:var(--mono);font-size:9px;letter-spacing:.18em;border-radius:999px">BEST</div>
+          <div class="eyebrow" style="color:rgba(255,255,255,.7);font-size:10px">Case 03 ／ 物流倉庫</div>
+          <div class="num" style="font-size:44px;font-weight:700;color:#fff;letter-spacing:-0.02em;margin-top:14px;line-height:1">28.6<span style="font-size:20px">%</span></div>
+          <div class="num" style="font-size:10px;letter-spacing:.2em;color:rgba(255,255,255,.7);margin-top:6px">COST DOWN</div>
+          <p style="font-size:12.5px;line-height:1.8;color:rgba(255,255,255,.9);margin:14px 0 0">固定単価×市場連動のハイブリッド設計で最大級の削減。</p>
+        </div>
+        <div style="background:var(--ink);color:var(--shell);padding:30px 26px;border-radius:6px">
+          <div class="eyebrow" style="color:rgba(255,255,255,.5);font-size:10px">Case 04 ／ 大規模食品工場</div>
+          <div class="num" style="font-size:44px;font-weight:700;color:var(--accent-soft);letter-spacing:-0.02em;margin-top:14px;line-height:1">14.3<span style="font-size:20px">%</span></div>
+          <div class="num" style="font-size:10px;letter-spacing:.2em;color:rgba(255,255,255,.55);margin-top:6px">COST DOWN</div>
+          <p style="font-size:12.5px;line-height:1.8;color:rgba(255,255,255,.75);margin:14px 0 0">時間帯別の使用分析でシフトを最適化し削減。</p>
+        </div>
+      </div>
+      <div style="margin-top:18px;font-family:var(--mono);font-size:11px;letter-spacing:.1em;color:var(--muted)">※ 特定の契約条件・使用状況をもとにしたシミュレーション値であり、実際の削減効果を保証するものではありません。</div>
+    </div>
+  </div>
+</section>
+
+<!-- 03 なぜチキンアンドエッグから -->
+<section id="why" style="background:var(--paper)">
+  <div class="wrap">
+    <div style="display:flex;align-items:center;gap:14px;margin-bottom:28px">
+      <span class="num" style="font-size:11px;color:var(--muted);letter-spacing:.1em">/ 03</span>
+      <span class="brand-tick" style="height:14px;background:var(--ink);opacity:0.35"></span>
+      <span class="eyebrow">Why Chicken &amp; Egg</span>
+      <span class="label-jp" style="margin-left:4px">なぜ、採用支援会社が電力なのか</span>
+    </div>
+    <div style="display:grid;grid-template-columns:1.1fr 0.9fr;gap:72px;align-items:start">
+      <div class="reveal">
+        <h2 class="display" style="font-size:clamp(30px, 3.5vw, 48px);margin:0;font-family:var(--serif);font-weight:700">採用も、電力も。<br/>私たちの仕事は<br/><span style="color:var(--accent)">「漏れ」を止める</span>こと。</h2>
+        <p style="margin-top:32px;font-size:15px;line-height:1.95;color:var(--ink-2);max-width:540px">採用では、入口（採用コスト）と出口（離職コスト）から予算が漏れていく。そして損益計算書では、毎月の電気代という固定費から利益が漏れていく。<br/><br/>チキンアンドエッグは、DGPの販売パートナーとして、静岡・愛知の中小企業の<strong style="color:var(--ink)">「漏れを止めて、地力を上げる」</strong>支援を行います。削減できた電気代は、そのまま採用や育成の原資に。人を増やす前に、守れる利益を守る。順番として、それが最も確実だからです。</p>
+      </div>
+      <div class="reveal">
+        <div style="display:flex;flex-direction:column;gap:0">
+          <div style="padding:28px 0;border-top:1px solid var(--ink)">
+            <div class="eyebrow" style="margin-bottom:10px">Point 01</div>
+            <h3 class="display" style="font-size:20px;margin:0;font-family:var(--display);font-weight:700">地元で、対面で相談できる</h3>
+            <p style="font-size:14px;line-height:1.9;color:var(--ink-2);margin-top:10px">プラットフォームの話は、正直むずかしい。静岡・愛知エリアなら対面で、貴社の検針票を見ながら分かる言葉でご説明します。</p>
+          </div>
+          <div style="padding:28px 0;border-top:1px solid var(--line)">
+            <div class="eyebrow" style="margin-bottom:10px">Point 02</div>
+            <h3 class="display" style="font-size:20px;margin:0;font-family:var(--display);font-weight:700">工事も停電も、原則なし</h3>
+            <p style="font-size:14px;line-height:1.9;color:var(--ink-2);margin-top:10px">切替は契約の切替であり、電気はこれまでと同じ送配電網から届きます。品質・安定性は変わりません。</p>
+          </div>
+          <div style="padding:28px 0;border-top:1px solid var(--line);border-bottom:1px solid var(--ink)">
+            <div class="eyebrow" style="margin-bottom:10px">Point 03</div>
+            <h3 class="display" style="font-size:20px;margin:0;font-family:var(--display);font-weight:700">経営全体を見て提案できる</h3>
+            <p style="font-size:14px;line-height:1.9;color:var(--ink-2);margin-top:10px">採用・定着支援で培った視点で、電気代の削減分をどこに再投資すべきかまで、一緒に考えられるのが私たちの強みです。</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 04 FLOW -->
+<section id="flow">
+  <div class="wrap">
+    <div style="display:flex;align-items:center;gap:14px;margin-bottom:28px">
+      <span class="num" style="font-size:11px;color:var(--muted);letter-spacing:.1em">/ 04</span>
+      <span class="brand-tick" style="height:14px;background:var(--ink);opacity:0.35"></span>
+      <span class="eyebrow">The Flow</span>
+      <span class="label-jp" style="margin-left:4px">ご利用までの流れ</span>
+    </div>
+    <div style="display:grid;grid-template-columns:1.05fr 1.95fr;gap:72px">
+      <div class="reveal">
+        <h2 class="display" style="font-size:clamp(26px, 2.6vw, 36px);margin:0;font-family:var(--serif);font-weight:700">まずは相談。<br/>切替は、契約満了に<br/>合わせて<span style="color:var(--accent)">無理なく</span>。</h2>
+        <p style="margin-top:28px;font-size:14.5px;line-height:2;color:var(--ink-2)">面倒な調整は、私たちとデジタルグリッド社が巻き取ります。現在のご契約の満了タイミングに合わせて切替時期を調整できるので、違約金の心配なく進められます。</p>
+      </div>
+      <div class="reveal">
+        <div style="position:relative;padding-left:36px">
+          <div style="position:absolute;left:8px;top:8px;bottom:24px;width:1px;background:var(--line-2)"></div>
+          <div style="position:relative;padding:0 0 36px">
+            <span style="position:absolute;left:-34px;top:4px;width:17px;height:17px;border-radius:50%;background:var(--bg);border:1.5px solid var(--ink);display:flex;align-items:center;justify-content:center"><span style="width:6px;height:6px;background:var(--accent);border-radius:50%"></span></span>
+            <div style="display:grid;grid-template-columns:auto 1fr;gap:24px;align-items:baseline"><div class="num" style="font-size:12px;color:var(--muted)">STEP / 01</div><div class="display" style="font-size:24px;font-weight:700;font-family:var(--display)">お問い合わせ・ヒアリング</div></div>
+            <p style="font-size:14px;color:var(--ink-2);line-height:1.9;margin:10px 0 0">LINEまたはメールでご連絡ください。電力に関するお悩みをヒアリングし、最適な解決策をご提案します。直近の検針票（電気料金明細）があるとスムーズです。</p>
+            <div style="display:grid;grid-template-columns:repeat(3, 1fr);gap:28px;margin-top:14px;padding-top:14px;border-top:1px dashed var(--line)">
+              <div><div class="eyebrow" style="font-size:10px">目安期間</div><div style="font-size:13px;color:var(--ink);margin-top:4px;font-weight:500">約 1週間</div></div>
+              <div><div class="eyebrow" style="font-size:10px">費用</div><div style="font-size:13px;color:var(--ink);margin-top:4px;font-weight:500">無料</div></div>
+              <div><div class="eyebrow" style="font-size:10px">ご用意いただくもの</div><div style="font-size:13px;color:var(--ink);margin-top:4px;font-weight:500">検針票・請求書</div></div>
+            </div>
+          </div>
+          <div style="position:relative;padding:0 0 36px">
+            <span style="position:absolute;left:-34px;top:4px;width:17px;height:17px;border-radius:50%;background:var(--bg);border:1.5px solid var(--ink);display:flex;align-items:center;justify-content:center"><span style="width:6px;height:6px;background:var(--accent);border-radius:50%"></span></span>
+            <div style="display:grid;grid-template-columns:auto 1fr;gap:24px;align-items:baseline"><div class="num" style="font-size:12px;color:var(--muted)">STEP / 02</div><div class="display" style="font-size:24px;font-weight:700;font-family:var(--display)">電力プラン設計・ご提案</div></div>
+            <p style="font-size:14px;color:var(--ink-2);line-height:1.9;margin:10px 0 0">使用状況を分析し、貴社に最適な電力プランを設計してご提案。削減額を金額でご提示します。社内稟議用の資料づくりもサポートします。</p>
+            <div style="display:grid;grid-template-columns:repeat(3, 1fr);gap:28px;margin-top:14px;padding-top:14px;border-top:1px dashed var(--line)">
+              <div><div class="eyebrow" style="font-size:10px">目安期間</div><div style="font-size:13px;color:var(--ink);margin-top:4px;font-weight:500">約 2〜3週間</div></div>
+              <div><div class="eyebrow" style="font-size:10px">費用</div><div style="font-size:13px;color:var(--ink);margin-top:4px;font-weight:500">無料</div></div>
+              <div><div class="eyebrow" style="font-size:10px">成果物</div><div style="font-size:13px;color:var(--ink);margin-top:4px;font-weight:500">削減シミュレーション・稟議資料</div></div>
+            </div>
+          </div>
+          <div style="position:relative;padding:0 0 36px">
+            <span style="position:absolute;left:-34px;top:4px;width:17px;height:17px;border-radius:50%;background:var(--bg);border:1.5px solid var(--ink);display:flex;align-items:center;justify-content:center"><span style="width:6px;height:6px;background:var(--accent);border-radius:50%"></span></span>
+            <div style="display:grid;grid-template-columns:auto 1fr;gap:24px;align-items:baseline"><div class="num" style="font-size:12px;color:var(--muted)">STEP / 03</div><div class="display" style="font-size:24px;font-weight:700;font-family:var(--display)">ご契約・切替手続き</div></div>
+            <p style="font-size:14px;color:var(--ink-2);line-height:1.9;margin:10px 0 0">契約締結後、電力の切替手続きを実施。現在のご契約の満了に合わせて切替時期を調整できます。原則として工事や停電はありません。</p>
+            <div style="display:grid;grid-template-columns:repeat(3, 1fr);gap:28px;margin-top:14px;padding-top:14px;border-top:1px dashed var(--line)">
+              <div><div class="eyebrow" style="font-size:10px">目安期間</div><div style="font-size:13px;color:var(--ink);margin-top:4px;font-weight:500">約 1〜2ヶ月</div></div>
+              <div><div class="eyebrow" style="font-size:10px">工事・停電</div><div style="font-size:13px;color:var(--ink);margin-top:4px;font-weight:500">原則なし</div></div>
+              <div><div class="eyebrow" style="font-size:10px">お客様の作業</div><div style="font-size:13px;color:var(--ink);margin-top:4px;font-weight:500">契約書類のご確認</div></div>
+            </div>
+          </div>
+          <div style="position:relative;padding:0">
+            <span style="position:absolute;left:-34px;top:4px;width:17px;height:17px;border-radius:50%;background:var(--bg);border:1.5px solid var(--ink);display:flex;align-items:center;justify-content:center"><span style="width:6px;height:6px;background:var(--accent);border-radius:50%"></span></span>
+            <div style="display:grid;grid-template-columns:auto 1fr;gap:24px;align-items:baseline"><div class="num" style="font-size:12px;color:var(--muted)">STEP / 04</div><div class="display" style="font-size:24px;font-weight:700;font-family:var(--display)">供給開始・継続サポート</div></div>
+            <p style="font-size:14px;color:var(--ink-2);line-height:1.9;margin:10px 0 0">供給開始後も、市場動向のレポーティングや年1回の契約見直しサポートを継続提供。「契約して終わり」にしない伴走型です。</p>
+            <div style="display:grid;grid-template-columns:repeat(3, 1fr);gap:28px;margin-top:14px;padding-top:14px;border-top:1px dashed var(--line)">
+              <div><div class="eyebrow" style="font-size:10px">期間</div><div style="font-size:13px;color:var(--ink);margin-top:4px;font-weight:500">供給開始〜継続</div></div>
+              <div><div class="eyebrow" style="font-size:10px">提供内容</div><div style="font-size:13px;color:var(--ink);margin-top:4px;font-weight:500">市場動向レポート</div></div>
+              <div><div class="eyebrow" style="font-size:10px">見直し</div><div style="font-size:13px;color:var(--ink);margin-top:4px;font-weight:500">年1回の契約見直し</div></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 05 FAQ -->
+<section id="faq" style="background:var(--paper)">
+  <div class="wrap">
+    <div style="display:flex;align-items:center;gap:14px;margin-bottom:28px">
+      <span class="num" style="font-size:11px;color:var(--muted);letter-spacing:.1em">/ 05</span>
+      <span class="brand-tick" style="height:14px;background:var(--ink);opacity:0.35"></span>
+      <span class="eyebrow">FAQ</span>
+      <span class="label-jp" style="margin-left:4px">よくある質問</span>
+    </div>
+    <div style="display:grid;grid-template-columns:0.9fr 1.1fr;gap:60px">
+      <div class="reveal">
+        <h2 class="display" style="font-size:clamp(32px, 3.6vw, 50px);margin:0;font-family:var(--serif);font-weight:700">不安は、<br/>切替の<span style="color:var(--accent)">前</span>に<br/>すべて解消。</h2>
+      </div>
+      <div class="reveal">
+        <div style="display:flex;flex-direction:column">
+          <div style="padding:28px 0;border-top:1px solid var(--ink)">
+            <div style="display:flex;gap:16px;align-items:baseline"><span class="num" style="color:var(--accent);font-size:13px;flex-shrink:0">Q.</span><h3 class="display" style="font-size:18px;margin:0;font-weight:700">電気が止まることはありませんか？</h3></div>
+            <div style="display:flex;gap:16px;align-items:baseline;margin-top:12px"><span class="num" style="color:var(--muted);font-size:13px;flex-shrink:0">A.</span><p style="font-size:14px;line-height:1.95;color:var(--ink-2);margin:0">ありません。切替後も電気はこれまでと同じ地域の送配電網を通って届くため、品質・安定性は変わりません。切替に伴う停電も原則ありません。</p></div>
+          </div>
+          <div style="padding:28px 0;border-top:1px solid var(--line)">
+            <div style="display:flex;gap:16px;align-items:baseline"><span class="num" style="color:var(--accent);font-size:13px;flex-shrink:0">Q.</span><h3 class="display" style="font-size:18px;margin:0;font-weight:700">契約している電力会社が倒産するとどうなりますか？</h3></div>
+            <div style="display:flex;gap:16px;align-items:baseline;margin-top:12px"><span class="num" style="color:var(--muted);font-size:13px;flex-shrink:0">A.</span><p style="font-size:14px;line-height:1.95;color:var(--ink-2);margin:0">電気が突然止まることはありません。国の制度として、送配電事業者によるセーフティネット（最終保障供給）が用意されており、次の契約先が決まるまで電気の供給は継続されます。</p></div>
+          </div>
+          <div style="padding:28px 0;border-top:1px solid var(--line)">
+            <div style="display:flex;gap:16px;align-items:baseline"><span class="num" style="color:var(--accent);font-size:13px;flex-shrink:0">Q.</span><h3 class="display" style="font-size:18px;margin:0;font-weight:700">電力市場ってリスクがあって怖くないですか？</h3></div>
+            <div style="display:flex;gap:16px;align-items:baseline;margin-top:12px"><span class="num" style="color:var(--muted);font-size:13px;flex-shrink:0">A.</span><p style="font-size:14px;line-height:1.95;color:var(--ink-2);margin:0">市場連動100%の契約は、確かに価格高騰時のリスクがあります。DGPのハイブリッドプランは約70%を固定価格で確保する設計なので、市場の安さを取り込みながら高騰リスクを抑えられます。リスクを取りたくない場合は、完全固定価格も選べます。</p></div>
+          </div>
+          <div style="padding:28px 0;border-top:1px solid var(--line)">
+            <div style="display:flex;gap:16px;align-items:baseline"><span class="num" style="color:var(--accent);font-size:13px;flex-shrink:0">Q.</span><h3 class="display" style="font-size:18px;margin:0;font-weight:700">契約期間の縛りはありますか？</h3></div>
+            <div style="display:flex;gap:16px;align-items:baseline;margin-top:12px"><span class="num" style="color:var(--muted);font-size:13px;flex-shrink:0">A.</span><p style="font-size:14px;line-height:1.95;color:var(--ink-2);margin:0">契約プランにより異なります。現在のご契約の満了時期も踏まえて、無理のない切替スケジュールと合わせて診断時にご説明します。</p></div>
+          </div>
+          <div style="padding:28px 0;border-top:1px solid var(--line);border-bottom:1px solid var(--ink)">
+            <div style="display:flex;gap:16px;align-items:baseline"><span class="num" style="color:var(--accent);font-size:13px;flex-shrink:0">Q.</span><h3 class="display" style="font-size:18px;margin:0;font-weight:700">シミュレーションだけ依頼することは可能ですか？</h3></div>
+            <div style="display:flex;gap:16px;align-items:baseline;margin-top:12px"><span class="num" style="color:var(--muted);font-size:13px;flex-shrink:0">A.</span><p style="font-size:14px;line-height:1.95;color:var(--ink-2);margin:0">可能です。シミュレーションは無料で、切替の義務はありません。「今の契約が適正か知りたい」だけでも歓迎です。削減余地が小さければ、その旨を正直にお伝えします。</p></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<section id="cta" style="padding-top:100px;padding-bottom:120px">
+  <div class="wrap">
+    <div class="reveal">
+      <div style="display:grid;grid-template-columns:1.2fr 0.8fr;gap:60px;padding:60px 60px 56px;background:var(--bg-2);border:1px solid var(--line);position:relative;overflow:hidden">
+        <svg viewBox="0 0 800 600" preserveAspectRatio="none" width="100%" height="100%" style="position:absolute;inset:0;opacity:0.12;pointer-events:none" aria-hidden="true">
+          <ellipse cx="650" cy="300" rx="56" ry="40" fill="none" stroke="var(--ink)" stroke-width=".5"></ellipse>
+          <ellipse cx="650" cy="300" rx="112" ry="80" fill="none" stroke="var(--ink)" stroke-width=".5"></ellipse>
+          <ellipse cx="650" cy="300" rx="168" ry="120" fill="none" stroke="var(--ink)" stroke-width=".5"></ellipse>
+          <ellipse cx="650" cy="300" rx="224" ry="160" fill="none" stroke="var(--ink)" stroke-width=".5"></ellipse>
+          <ellipse cx="650" cy="300" rx="280" ry="200" fill="none" stroke="var(--ink)" stroke-width=".5"></ellipse>
+          <ellipse cx="650" cy="300" rx="336" ry="240" fill="none" stroke="var(--ink)" stroke-width=".5"></ellipse>
+          <ellipse cx="650" cy="300" rx="392" ry="280" fill="none" stroke="var(--ink)" stroke-width=".5"></ellipse>
+        </svg>
+        <div style="position:relative">
+          <div class="eyebrow">Free Simulation ／ 無料診断</div>
+          <h2 class="display" style="font-size:clamp(30px, 3.4vw, 46px);margin:18px 0 0;font-family:var(--serif);font-weight:700;letter-spacing:-0.005em">まず、検針票を<br/>送ってみてください。</h2>
+          <p style="font-size:14.5px;line-height:2;color:var(--ink-2);margin-top:24px;max-width:480px">どれだけ削減できるかは、診断してみないと分かりません。診断は無料、切替の義務もありません。LINEで検針票の写真を送るだけでもOK。静岡・愛知エリアの企業様は対面でのご説明も可能です。</p>
+        </div>
+        <div style="position:relative">
+          <div style="display:flex;flex-direction:column;gap:12px">
+            <a href="https://lin.ee/QEVJczT" target="_blank" rel="noopener" class="btn btn-accent" style="width:100%;justify-content:space-between">LINEで削減額を診断する（無料）<span class="arrow">→</span></a>
+            <a href="mailto:info@chickenandegg.co.jp" class="btn" style="width:100%;justify-content:space-between">メールで相談する<span class="arrow">→</span></a>
+            <a href="/#contact" class="btn btn-ghost" style="width:100%;justify-content:space-between">採用のことも合わせて相談する<span class="arrow">→</span></a>
+          </div>
+          <div style="margin-top:28px;padding-top:20px;border-top:1px solid var(--line);display:grid;grid-template-columns:1fr 1fr;gap:12px;font-size:12px;color:var(--muted)">
+            <div><div class="eyebrow" style="font-size:10px">受付時間</div><div class="num" style="margin-top:4px;color:var(--ink)">平日 9:00 — 18:00</div></div>
+            <div><div class="eyebrow" style="font-size:10px">返信目安</div><div class="num" style="margin-top:4px;color:var(--ink)">1営業日以内</div></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer style="background:var(--ink);color:var(--shell);padding:64px 0 36px">
+  <div class="wrap">
+    <div style="display:flex;justify-content:space-between;align-items:flex-start;flex-wrap:wrap;gap:28px;padding-bottom:40px;border-bottom:1px solid rgba(255,255,255,.16)">
+      <div>
+        <span style="display:inline-flex;align-items:center;gap:11px;color:var(--shell)"><img src="assets/logo-mark-rev.png" alt="Chicken and Egg" width="30" height="40" style="display:block;object-fit:contain"/><span style="font-family:var(--display);font-weight:700;font-size:16px;letter-spacing:0.04em">Chicken<span style="color:var(--accent);margin:0 3px">&amp;</span>Egg</span></span>
+        <address style="font-style:normal;margin-top:18px;font-size:13px;line-height:1.95;color:rgba(255,255,255,.65)">株式会社チキンアンドエッグ<br/>静岡県磐田市二之宮 478-103<br/><span class="num">Est. 2025 · Founder: Toru Uchiyama</span><br/><span style="font-size:12px">デジタルグリッドプラットフォーム 販売パートナー</span></address>
+      </div>
+      <ul style="list-style:none;padding:0;margin:0;display:flex;flex-direction:column;gap:10px;text-align:right">
+        <li><a href="/" style="font-size:13px;color:rgba(255,255,255,.78)">トップページ</a></li>
+        <li><a href="/#sec-1" style="font-size:13px;color:rgba(255,255,255,.78)">採用支援サービス</a></li>
+        <li><a href="https://lin.ee/QEVJczT" target="_blank" rel="noopener" style="font-size:13px;color:rgba(255,255,255,.78)">LINEで無料診断</a></li>
+        <li><a href="privacy.html" style="font-size:13px;color:rgba(255,255,255,.78)">プライバシーポリシー</a></li>
+      </ul>
+    </div>
+    <div style="margin-top:24px;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:12px;font-family:var(--mono);font-size:11px;letter-spacing:.14em;color:rgba(255,255,255,.55)">
+      <span>© 2026 CHICKEN AND EGG INC. ALL RIGHTS RESERVED.</span>
+      <span>COST DOWN, SAME POWER. ／ ENERGY</span>
+    </div>
+  </div>
+</footer>
+
+<script>
+(function(){
+  var io = new IntersectionObserver(function(entries){
+    entries.forEach(function(e){
+      if(e.isIntersecting){ e.target.classList.add('in'); io.unobserve(e.target); }
+    });
+  }, { threshold: 0.12, rootMargin: '0px 0px -40px 0px' });
+  document.querySelectorAll('.reveal').forEach(function(el){ io.observe(el); });
+  var hdr = document.querySelector('header');
+  function onScroll(){ hdr.classList.toggle('hdr-scrolled', window.scrollY > 24); }
+  window.addEventListener('scroll', onScroll, { passive: true });
+  onScroll();
+})();
+</script>
+</body>
+</html>
